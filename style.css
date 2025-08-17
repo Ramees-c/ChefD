@@ -1,0 +1,65 @@
+/* Colours */
+.bg-primary {
+  background-color: #e3000e;
+}
+
+.text-primary-color {
+  color: #e3000e;
+}
+
+.bg-custom-black {
+  background-color: #1a1818;
+}
+
+.text-custom-black {
+  color: #1a1818;
+}
+
+.active {
+  color: #e3000e;
+}
+
+.custom-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.custom-btn {
+  background-color: #e3000e;
+  padding: 0.75rem 2rem;
+  color: white;
+  font-weight: 500;
+  display: inline-block;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #1a1818;
+  border: 3px solid #e3000e;
+  color: #e3000e;
+}
+
+.active-list {
+  color: #e3000e;
+  background-color: #1a1818;
+}
+
+/* Responsive padding variations */
+@media (min-width: 640px) {
+  .custom-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .custom-container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}

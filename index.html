@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChefD</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Tailwindcss CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- CDN Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Start Header Section -->
+    <header class="bg-custom-black shadow-md">
+      <div class="custom-container">
+        <nav class="flex items-center justify-between py-4">
+          <!-- Logo -->
+          <a href="index.html"
+            ><img
+              src="assets/images/logo/brand-logo-1.png"
+              alt=""
+              class="w-[120px]"
+          /></a>
+
+          <!-- Mobile menu button -->
+          <div class="lg:hidden">
+            <button
+              class="navbar-toggler focus:outline-none"
+              type="button"
+              aria-label="Toggle navigation"
+            >
+              <span class="block w-6 h-0.5 bg-primary mb-1"></span>
+              <span class="block w-6 h-0.5 bg-primary mb-1"></span>
+              <span class="block w-6 h-0.5 bg-primary"></span>
+            </button>
+          </div>
+
+          <!-- Navigation Links -->
+          <div class="hidden lg:flex lg:items-center lg:justify-between">
+            <ul class="flex space-x-20">
+              <li>
+                <a
+                  href="index.html"
+                  class="active text-white font-medium hover:text-[#e3000e] text-xl transition duration-300 ease-in-out transform"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="menu.html"
+                  class="text-white font-medium hover:text-[#e3000e] text-xl transition duration-300 ease-in-out transform"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="text-white font-medium hover:text-[#e3000e] text-xl transition duration-300 ease-in-out transform"
+                  >Menu</a
+                >
+              </li>
+              <li>
+                <a
+                  href="book.html"
+                  class="text-white font-medium hover:text-[#e3000e] text-xl transition duration-300 ease-in-out transform"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Mobile menu (hidden by default) -->
+        <div class="lg:hidden hidden" id="mobile-menu">
+          <ul class="py-4 space-y-2">
+            <li>
+              <a
+                href="index.html"
+                class="block px-4 py-2 text-white font-medium hover:text-[#e3000e] text-lg"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="menu.html"
+                class="block px-4 py-2 text-white font-medium hover:text-[#e3000e] text-lg"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="block px-4 py-2 text-white font-medium hover:text-[#e3000e] text-lg"
+                >Menu</a
+              >
+            </li>
+            <li>
+              <a
+                href="book.html"
+                class="block px-4 py-2 text-white font-medium hover:text-[#e3000e] text-lg"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- End Header Section -->
+
+    <!-- Start Slider Section -->
+    <section
+      class="relative py-16 md:py-24 overflow-hidden"
+      style="
+        background-image: url('assets/images/slider/hero-bg1.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      "
+    >
+      <!-- Carousel Container -->
+      <div id="foodCarousel" class="relative w-full">
+        <!-- Slides Container -->
+        <div class="relative h-[300px] md:h-[60vh] overflow-hidden">
+          <!-- Slide 1 (Active) -->
+          <div
+            class="carousel-slide absolute inset-0 transition-opacity duration-500 flex items-center opacity-100"
+            data-index="0"
+          >
+            <div class="custom-container">
+              <div class="flex flex-col md:flex-row items-center">
+                <div class="w-full md:w-1/2 lg:w-2/3 text-white">
+                  <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+                    Premium Burgers
+                  </h2>
+                  <p class="text-gray-300 mb-8 text-lg">
+                    Our signature burgers made with 100% organic beef and fresh
+                    ingredients. Handcrafted to perfection for the ultimate
+                    dining experience.
+                  </p>
+                  <a href="#" class="custom-btn"> Order Now </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div
+            class="carousel-slide absolute inset-0 transition-opacity duration-500 flex items-center opacity-0"
+            data-index="1"
+          >
+            <div class="custom-container">
+              <div class="flex flex-col md:flex-row items-center">
+                <div class="w-full md:w-1/2 lg:w-1/2 text-white">
+                  <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+                    Crispy Chicken
+                  </h2>
+                  <p class="text-gray-300 mb-8 text-lg">
+                    Golden crispy chicken with our special blend of herbs and
+                    spices. Juicy on the inside, crunchy on the outside -
+                    perfection in every bite.
+                  </p>
+                  <a href="#" class="custom-btn"> Order Now </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div
+            class="carousel-slide absolute inset-0 transition-opacity duration-500 flex items-center opacity-0"
+            data-index="2"
+          >
+            <div class="custom-container">
+              <div class="flex flex-col md:flex-row items-center">
+                <div class="w-full md:w-1/2 lg:w-1/2 text-white">
+                  <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+                    Fresh Salads
+                  </h2>
+                  <p class="text-gray-300 mb-8 text-lg">
+                    Healthy and delicious salads made with farm-fresh
+                    vegetables. Perfect for those seeking a lighter but equally
+                    tasty option.
+                  </p>
+                  <a href="#" class="custom-btn"> Order Now </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Indicators -->
+        <div
+          class="absolute bottom-0 left-1/6 -translate-x-1/2 flex space-x-5 z-10"
+        >
+          <button
+            class="carousel-indicator w-2 h-2 rounded-full bg-white/50 hover:bg-[#e3000e] transition"
+            data-index="0"
+          ></button>
+          <button
+            class="carousel-indicator w-2 h-2 rounded-full bg-white/50 hover:bg-[#e3000e] transition"
+            data-index="1"
+          ></button>
+          <button
+            class="carousel-indicator w-2 h-2 rounded-full bg-white/50 hover:bg-[#e3000e] transition"
+            data-index="2"
+          ></button>
+        </div>
+      </div>
+    </section>
+    <!-- End Slider Section -->
+
+    <!-- About Area Start -->
+    <div class="py-20 bg-white">
+      <div class="custom-container px-4">
+        <div class="flex flex-col lg:flex-row items-center">
+          <div class="w-full lg:w-1/2 mb-12 lg:mb-0">
+            <div class="mb-12">
+              <!-- Section Title -->
+              <div class="mb-8">
+                <span class="text-lg font-medium text-primary-color"
+                  >Discover Your Test</span
+                >
+                <h2 class="text-3xl md:text-4xl font-bold mt-2">
+                  We Provide Good Food For Your Family!
+                </h2>
+              </div>
+              <p class="mb-6">
+                Ut enim acgsd minim veniam, quxcis nostrud exercitation ullamco
+                laboris nisi ufsit aliquip ex ea commodo consequat is aute irure
+                m, quis nostrud exer.
+              </p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="flex items-start mb-5">
+                <div class="text-3xl text-green-600 mr-4">
+                  <span class="flaticon-restaurant">🍴</span>
+                </div>
+                <div>
+                  <p class="text-gray-600">
+                    Ut enim ad minim veniam, quis nostrud exer.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start mb-5">
+                <div class="text-3xl text-green-600 mr-4">
+                  <span class="flaticon-tools-and-utensils-1">🔪</span>
+                </div>
+                <div>
+                  <p class="text-gray-600">
+                    Ut enim ad minim veniam, quis nostrud exer.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start mb-5">
+                <div class="text-3xl text-green-600 mr-4">
+                  <span class="flaticon-hat">👨‍🍳</span>
+                </div>
+                <div>
+                  <p class="text-gray-600">
+                    Ut enim ad minim veniam, quis nostrud exer.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start mb-5">
+                <div class="text-3xl text-green-600 mr-4">
+                  <span class="flaticon-restaurant">🍽️</span>
+                </div>
+                <div>
+                  <p class="text-gray-600">
+                    Ut enim ad minim veniam, quis nostrud exer.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full lg:w-1/2">
+            <!-- about-img -->
+            <div class="lg:pl-12">
+              <img
+                src="assets/images/about-img.jpg"
+                alt="About us"
+                class="w-full rounded-lg shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About Area End -->
+
+    <section class="py-16 bg-white">
+      <div class="custom-container px-4">
+        <!-- Heading -->
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold">Our Menu</h2>
+        </div>
+
+        <!-- Filter Menu -->
+        <ul
+          class="flex flex-wrap justify-center gap-2 md:gap-4 mb-12 list-none p-0"
+        >
+          <li
+            class="px-5 py-2 rounded-full cursor-pointer bg-gray-200 text-white hover:bg-[#1a1818] hover:text-[#e3000e] active-list font-bold"
+          >
+            All
+          </li>
+          <li
+            class="px-4 py-2 rounded-full cursor-pointer bg-gray-200 hover:bg-[#1a1818] hover:text-[#e3000e] transition font-bold"
+            data-filter=".burger"
+          >
+            Biryani Specials
+          </li>
+          <li
+            class="px-4 py-2 rounded-full cursor-pointer bg-gray-200 hover:bg-[#1a1818] hover:text-[#e3000e] transition font-bold"
+            data-filter=".pizza"
+          >
+            Non-Veg Starters
+          </li>
+          <li
+            class="px-4 py-2 rounded-full cursor-pointer bg-gray-200 hover:bg-[#1a1818] hover:text-[#e3000e] transition font-bold"
+            data-filter=".pasta"
+          >
+            Veg Starters
+          </li>
+          <li
+            class="px-4 py-2 rounded-full cursor-pointer bg-gray-200 hover:bg-[#1a1818] hover:text-[#e3000e] transition font-bold"
+            data-filter=".fries"
+          >
+            Rice & Noodles
+          </li>
+
+          <li
+            class="px-4 py-2 rounded-full cursor-pointer bg-gray-200 hover:bg-[#1a1818] hover:text-[#e3000e] transition font-bold"
+            data-filter=".fries"
+          >
+            Quick Bites
+          </li>
+
+          <li
+            class="px-4 py-2 rounded-full cursor-pointer bg-gray-200 hover:bg-[#1a1818] hover:text-[#e3000e] transition font-bold"
+            data-filter=".fries"
+          >
+            South Indian Snacks
+          </li>
+        </ul>
+
+        <!-- Food Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div
+            class="relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-al"
+          >
+            <div
+              class="bg-gray-100 flex justify-center items-center h-56 rounded-br-[45px]"
+            >
+              <img
+                src="assets/images/menu/mutton-dum-hyd.jpg"
+                alt="Mutton Dum Biriyani (Hydarabadi)"
+                class="w-full h-full"
+              />
+            </div>
+            <div class="p-6 text-white">
+              <h5 class="text-lg font-semibold mb-2">
+                Mutton Dum Biriyani (Hydarabadi)
+              </h5>
+              <p class="text-gray-300 mb-4 text-sm">
+                A royal delicacy, slow-cooked with tender mutton, fragrant
+                basmati rice, golden caramelized onions, and a rich blend of
+                authentic spices. Straight from the kitchens of the Nizams, this
+                biryani is a timeless feast crafted to perfection for true
+                biryani lovers.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-al"
+          >
+            <div
+              class="bg-gray-100 flex justify-center items-center h-56 rounded-br-[45px]"
+            >
+              <img
+                src="assets/images/menu/chicken-dum-hyd.jpg"
+                alt="Mutton Dum Biriyani (Hydarabadi)"
+                class="w-full h-full"
+              />
+            </div>
+            <div class="p-6 text-white">
+              <h5 class="text-lg font-semibold mb-2">
+                Chicken Dum Biryani (Hyderabadi)
+              </h5>
+              <p class="text-gray-300 mb-4 text-sm">
+                A royal delicacy, slow-cooked with tender chicken, fragrant
+                basmati rice, golden caramelized onions, and a rich blend of
+                authentic Hyderabadi spices. A timeless feast from the City of
+                Nizams, crafted to perfection for true biryani lovers.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-al"
+          >
+            <div
+              class="bg-gray-100 flex justify-center items-center h-56 rounded-br-[45px]"
+            >
+              <img
+                src="assets/images/menu/chicken-dum-hyd.jpg"
+                alt="Mutton Dum Biriyani (Hydarabadi)"
+                class="w-full h-full"
+              />
+            </div>
+            <div class="p-6 text-white">
+              <h5 class="text-lg font-semibold mb-2">
+                Mutton Dum Biryani (ChefD Special – Jeera Samba Rice)
+              </h5>
+              <p class="text-gray-300 mb-4 text-sm">
+                A signature ChefD delicacy, crafted with succulent mutton and
+                the aromatic richness of Jeera Samba rice. Slow-cooked with
+                caramelized onions, traditional spices, and perfected over dum,
+                this biryani offers an authentic taste of heritage in every
+                bite.
+              </p>
+            </div>
+          </div>
+
+          <!-- <div
+            class="relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-al"
+          >
+            <div
+              class="bg-gray-100 flex justify-center items-center h-56 rounded-br-[45px]"
+            >
+              <img
+                src="assets/images/menu/chicken-dum-hyd.jpg"
+                alt="Mutton Dum Biriyani (Hydarabadi)"
+                class="w-full h-full"
+              />
+            </div>
+            <div class="p-6 text-white">
+              <h5 class="text-lg font-semibold mb-2">
+                Chicken Dum Biryani (ChefD Special – Jeera Samba Rice)
+              </h5>
+              <p class="text-gray-300 mb-4 text-sm">
+                A ChefD signature, featuring tender chicken and the unique aroma
+                of Jeera Samba rice. Slow-cooked on dum with caramelized onions
+                and authentic spices, this biryani delivers a rich and flavorful
+                experience that captures true Hyderabadi tradition.
+              </p>
+            </div>
+          </div> -->
+
+          <!-- Non-Veg Starters -->
+          <div
+            class="relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-al"
+          >
+            <div
+              class="bg-gray-100 flex justify-center items-center h-56 rounded-br-[45px]"
+            >
+              <img
+                src="assets/images/menu/chicken-dum-hyd.jpg"
+                alt="Mutton Dum Biriyani (Hydarabadi)"
+                class="w-full h-full"
+              />
+            </div>
+            <div class="p-6 text-white">
+              <h5 class="text-lg font-semibold mb-2">
+                Chicken Kebab (Chicken 65)
+              </h5>
+              <p class="text-gray-300 mb-4 text-sm">
+                A fiery South Indian favorite made with tender chicken,
+                marinated in aromatic spices, and deep-fried to golden
+                perfection. Crispy on the outside, juicy on the inside — a
+                must-try starter for spice lovers.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-al"
+          >
+            <div
+              class="bg-gray-100 flex justify-center items-center h-56 rounded-br-[45px]"
+            >
+              <img
+                src="assets/images/menu/chicken-dum-hyd.jpg"
+                alt="Mutton Dum Biriyani (Hydarabadi)"
+                class="w-full h-full"
+              />
+            </div>
+            <div class="p-6 text-white">
+              <h5 class="text-lg font-semibold mb-2">
+                Chicken Chilli (Chinese Style)
+              </h5>
+              <p class="text-gray-300 mb-4 text-sm">
+                Tender chicken tossed with onions, capsicum, and a flavorful
+                blend of Chinese sauces. A perfect Indo-Chinese starter that’s
+                spicy, tangy, and irresistibly delicious.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-al"
+          >
+            <div
+              class="bg-gray-100 flex justify-center items-center h-56 rounded-br-[45px]"
+            >
+              <img
+                src="assets/images/menu/chicken-dum-hyd.jpg"
+                alt="Mutton Dum Biriyani (Hydarabadi)"
+                class="w-full h-full"
+              />
+            </div>
+            <div class="p-6 text-white">
+              <h5 class="text-lg font-semibold mb-2">Veg Manchurian</h5>
+              <p class="text-gray-300 mb-4 text-sm">
+                Crispy vegetable balls tossed in a rich, tangy Indo-Chinese
+                sauce with garlic, spring onions, and spices. A perfect blend of
+                crunch and flavor that’s loved by all.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- View More Button -->
+        <div class="flex justify-center mt-12">
+          <a href="#" class="custom-btn"> View More </a>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="relative bg-cover bg-no-repeat bg-fixed py-12"
+      style="background-image: url('assets/images/bg1.jpg')"
+    >
+      <div class="absolute inset-0 bg-black/65"></div>
+      <div
+        class="relative z-10 custom-container px-6 lg:px-20 flex flex-col lg:flex-row items-center"
+      >
+        <!-- Left Content -->
+        <div class="w-full text-center">
+          <h2
+            class="text-3xl lg:text-5xl font-extrabold text-white leading-snug"
+          >
+            December sale is on! <br />
+            with big <span class="text-primary-color">Discount...</span>
+          </h2>
+
+          <button
+            class="mt-6 bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-full transition duration-300"
+          >
+            Shop Now
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Services Start -->
+    <div class="py-20 bg-white">
+      <div class="custom-container px-4">
+        <!-- Section Heading -->
+        <div class="flex justify-center">
+          <div class="w-full lg:w-8/12 xl:w-7/12">
+            <div class="text-center mb-16">
+              <span class="text-lg font-medium text-primary-color block mb-2"
+                >Services We Offer</span
+              >
+              <h2 class="text-3xl md:text-4xl font-bold">Our Best Services</h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Service 1 -->
+          <div
+            class="text-center p-8 rounded-lg transform transition-all duration-300 shadow-lg hover:scale-105"
+          >
+            <div class="text-5xl text-green-600 mb-6">
+              <span class="flaticon-restaurant">👨‍🍳</span>
+            </div>
+            <div class="services-content">
+              <h5 class="text-xl font-semibold mb-3">
+                <a href="#" class="hover:text-green-600 transition"
+                  >Best Chef</a
+                >
+              </h5>
+              <p class="text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service 2 (Active) -->
+          <div
+            class="text-center p-8 rounded-lg transform transition-all duration-300 shadow-lg hover:scale-105"
+          >
+            <div class="text-5xl text-green-600 mb-6">
+              <span class="flaticon-tools-and-utensils-1">🍽️</span>
+            </div>
+            <div class="services-content">
+              <h5 class="text-xl font-semibold mb-3">
+                <a href="#" class="hover:text-green-600 transition"
+                  >Quality Food</a
+                >
+              </h5>
+              <p class="text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div
+            class="text-center p-8 rounded-lg transition-all duration-300 shadow-lg hover:scale-105"
+          >
+            <div class="text-5xl text-green-600 mb-6">
+              <span class="flaticon-restaurant">🔥</span>
+            </div>
+            <div class="services-content">
+              <h5 class="text-xl font-semibold mb-3">
+                <a href="#" class="hover:text-green-600 transition"
+                  >Perfect Cook</a
+                >
+              </h5>
+              <p class="text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore.
+              </p>
+            </div>
+          </div>
+          <div
+            class="text-center p-8 rounded-lg transition-all duration-300 shadow-lg hover:scale-105"
+          >
+            <div class="text-5xl text-green-600 mb-6">
+              <span class="flaticon-restaurant">🔥</span>
+            </div>
+            <div class="services-content">
+              <h5 class="text-xl font-semibold mb-3">
+                <a href="#" class="hover:text-green-600 transition"
+                  >Perfect Cook</a
+                >
+              </h5>
+              <p class="text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore.
+              </p>
+            </div>
+          </div>
+          <div
+            class="text-center p-8 rounded-lg transition-all duration-300 shadow-lg hover:scale-105"
+          >
+            <div class="text-5xl text-green-600 mb-6">
+              <span class="flaticon-restaurant">🔥</span>
+            </div>
+            <div class="services-content">
+              <h5 class="text-xl font-semibold mb-3">
+                <a href="#" class="hover:text-green-600 transition"
+                  >Perfect Cook</a
+                >
+              </h5>
+              <p class="text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore.
+              </p>
+            </div>
+          </div>
+          <div
+            class="text-center p-8 rounded-lg transition-all duration-300 shadow-lg hover:scale-105"
+          >
+            <div class="text-5xl text-green-600 mb-6">
+              <span class="flaticon-restaurant">🔥</span>
+            </div>
+            <div class="services-content">
+              <h5 class="text-xl font-semibold mb-3">
+                <a href="#" class="hover:text-green-600 transition"
+                  >Perfect Cook</a
+                >
+              </h5>
+              <p class="text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Our Services End -->
+
+    <section class="py-16">
+      <div class="container mx-auto px-6 lg:px-20 text-center">
+        <!-- Heading -->
+        <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900">
+          We are now partnered with
+          <span class="text-orange-500">Swiggy</span> &
+          <span class="text-red-600">Zomato</span>
+        </h2>
+        <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+          Enjoy your favorite dishes from our restaurant delivered to your
+          doorstep through
+          <span class="font-semibold">Swiggy</span> and
+          <span class="font-semibold">Zomato</span>. Fresh, hot, and fast – just
+          the way you love it! 🍽️
+        </p>
+
+        <!-- Logos + Buttons -->
+        <div
+          class="mt-10 flex flex-col sm:flex-row justify-center items-center gap-8"
+        >
+          <!-- Swiggy -->
+          <div class="flex flex-col items-center">
+            <img
+              src="assets/images/swiggy.png"
+              alt="Swiggy"
+              class="w-28 h-auto mb-4"
+            />
+            <a
+              href="#"
+              class="bg-orange-500 text-white font-semibold py-2 px-6 rounded-full hover:bg-orange-600 transition duration-300"
+            >
+              Order on Swiggy
+            </a>
+          </div>
+
+          <!-- Zomato -->
+          <div class="flex flex-col items-center">
+            <img
+              src="assets/images/zomato.png"
+              alt="Zomato"
+              class="w-28 h-auto mb-4"
+            />
+            <a
+              href="#"
+              class="bg-red-600 text-white font-semibold py-2 px-6 rounded-full hover:bg-red-700 transition duration-300"
+            >
+              Order on Zomato
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Start -->
+    <footer
+      class="relative bg-cover bg-no-repeat"
+      style="background-image: url('assets/images/footer-bg.jpg')"
+    >
+      <div class="absolute inset-0 bg-black/85"></div>
+      <div class="relative z-10 custom-container px-4">
+        <div class="pt-16">
+          <div class="flex flex-wrap -mx-4 justify-between">
+            <!-- Logo Column -->
+            <div class="w-full md:w-1/2 lg:w-1/4 xl:w-1/4 px-4 mb-12 md:mb-0">
+              <div class="mb-12">
+                <div class="mb-8">
+                  <a href="index.html">
+                    <img
+                      src="assets/images/logo/brand-logo-1.png"
+                      alt="Logo"
+                      width="120"
+                    />
+                  </a>
+                </div>
+                <p class="text-white">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Architecto distinctio voluptatem recusandae necessitatibus
+                </p>
+
+                <div class="pace-x-4">
+                  <h4 class="text-white text-lg font-bold mt-6 mb-5">
+                    Follow Us
+                  </h4>
+                  <div class="flex gap-5 text-xl">
+                    <a
+                      href="#"
+                      class="text-white hover:text-[#e3000e] duration-300 transition"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a
+                      href="#"
+                      class="text-white hover:text-[#e3000e] duration-300 transition"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a
+                      href="#"
+                      class="text-white hover:text-[#e3000e] duration-300 transition"
+                      ><i class="fas fa-globe"></i
+                    ></a>
+                    <a
+                      href="#"
+                      class="text-white hover:text-[#e3000e] duration-300 transition"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Navigation Column -->
+            <div class="w-1/2 md:w-1/4 lg:w-1/6 xl:w-1/6 px-4 mb-12">
+              <div class="mb-8">
+                <h4 class="text-white text-lg font-bold mb-6">Navigation</h4>
+                <ul class="space-y-3">
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-300 hover:text-[#e3000e] duration-300 transition"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-300 hover:text-[#e3000e] duration-300 transition"
+                      >About</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-300 hover:text-[#e3000e] duration-300 transition"
+                      >Menu</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-300 hover:text-[#e3000e] duration-300 transition"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Useful Links Column -->
+            <div class="w-1/2 md:w-1/4 lg:w-1/6 xl:w-1/6 px-4 mb-12">
+              <div class="mb-8">
+                <h4 class="text-white text-lg font-bold mb-6">Address</h4>
+                <ul class="space-y-3">
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-300 hover:text-white transition"
+                      >Registration</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-300 hover:text-white transition"
+                      >Login</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-300 hover:text-white transition"
+                      >Policy</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-300 hover:text-white transition"
+                      >Terms & Conditions</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Instagram Column -->
+            <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-4">
+              <div class="mb-8">
+                <h4 class="text-white text-lg font-bold mb-6">Location</h4>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31236.39582305075!2d75.34957854491479!3d11.8667766047777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba422b9b2aca753%3A0x380605a11ce24f6c!2sKannur%2C%20Kerala!5e0!3m2!1sen!2sin!4v1755417951793!5m2!1sen!2sin"
+                  width="250"
+                  height="150"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="py-8 border-t border-gray-700">
+          <div class="flex flex-wrap -mx-4 items-center justify-between">
+            <div class="w-full px-4">
+              <p class="text-white text-sm text-center">
+                Copyright &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                All rights reserved by ChefD
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script>
+      // Mobile menu toggle functionality
+      document
+        .querySelector(".navbar-toggler")
+        .addEventListener("click", function () {
+          const mobileMenu = document.getElementById("mobile-menu");
+          mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
