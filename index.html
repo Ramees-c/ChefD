@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ChefD</title>
 
-    <!-- CSS Link -->
-    <link rel="stylesheet" href="style.css" />
-
     <!-- Tailwindcss CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css" />
 
     <!-- CDN Font Awesome -->
     <link
@@ -223,8 +223,8 @@
     <!-- About Area Start -->
     <div class="py-20 bg-white">
       <div class="custom-container px-4">
-        <div class="flex flex-col lg:flex-row items-center">
-          <div class="w-full lg:w-1/2 mb-12 lg:mb-0">
+        <div class="flex flex-col xl:flex-row items-center">
+          <div class="w-full xl:w-1/2 mb-12 lg:mb-0">
             <div class="mb-12">
               <!-- Section Title -->
               <div class="mb-8">
@@ -235,13 +235,24 @@
                   We Provide Good Food For Your Family!
                 </h2>
               </div>
-              <p class="mb-6">
+              <p class="mb-6 text-md md:text-lg">
                 Ut enim acgsd minim veniam, quxcis nostrud exercitation ullamco
                 laboris nisi ufsit aliquip ex ea commodo consequat is aute irure
-                m, quis nostrud exer.
+                m, quis nostrud exer. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Impedit cupiditate ea ipsam excepturi delectus
+                pariatur saepe provident quis aliquid maiores incidunt eaque ut
+                quos quae, assumenda rem? Quia eligendi magnam, rerum harum
+                optio quod veniam vitae repellendus perferendis, maxime nesciunt
+                odit rem fuga fugiat accusantium animi amet vero molestiae
+                mollitia! Minima voluptatem eum adipisci assumenda, enim commodi
+                corrupti debitis, molestiae maxime et consequatur tenetur velit
+                a! Tempore fuga, cumque laboriosam possimus non dolorem impedit
+                animi, consequuntur totam excepturi nulla accusamus, placeat
+                itaque deserunt neque harum. Beatae asperiores esse dolores,
+                nulla numquam atque amet minus ea! Ab vero tempora modi velit?
               </p>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <!-- <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div class="flex items-start mb-5">
                 <div class="text-3xl text-green-600 mr-4">
                   <span class="flaticon-restaurant">🍴</span>
@@ -282,7 +293,7 @@
                   </p>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
           <div class="w-full lg:w-1/2">
             <!-- about-img -->
@@ -311,44 +322,44 @@
           class="flex flex-wrap justify-center gap-2 md:gap-4 mb-12 list-none p-0"
         >
           <li
-            class="px-5 py-2 rounded-full cursor-pointer bg-gray-200 text-white hover:bg-[#1a1818] hover:text-[#e3000e] active-list font-bold"
+          class="menu-list active-list"
           >
             All
           </li>
           <li
-            class="px-4 py-2 rounded-full cursor-pointer bg-gray-200 hover:bg-[#1a1818] hover:text-[#e3000e] transition font-bold"
+            class="menu-list"
             data-filter=".burger"
           >
             Biryani Specials
           </li>
           <li
-            class="px-4 py-2 rounded-full cursor-pointer bg-gray-200 hover:bg-[#1a1818] hover:text-[#e3000e] transition font-bold"
+            class="menu-list"
             data-filter=".pizza"
           >
             Non-Veg Starters
           </li>
           <li
-            class="px-4 py-2 rounded-full cursor-pointer bg-gray-200 hover:bg-[#1a1818] hover:text-[#e3000e] transition font-bold"
+            class="menu-list"
             data-filter=".pasta"
           >
             Veg Starters
           </li>
           <li
-            class="px-4 py-2 rounded-full cursor-pointer bg-gray-200 hover:bg-[#1a1818] hover:text-[#e3000e] transition font-bold"
+            class="menu-list"
             data-filter=".fries"
           >
             Rice & Noodles
           </li>
 
           <li
-            class="px-4 py-2 rounded-full cursor-pointer bg-gray-200 hover:bg-[#1a1818] hover:text-[#e3000e] transition font-bold"
+            class="menu-list"
             data-filter=".fries"
           >
             Quick Bites
           </li>
 
           <li
-            class="px-4 py-2 rounded-full cursor-pointer bg-gray-200 hover:bg-[#1a1818] hover:text-[#e3000e] transition font-bold"
+            class="menu-list"
             data-filter=".fries"
           >
             South Indian Snacks
@@ -543,7 +554,7 @@
       class="relative bg-cover bg-no-repeat bg-fixed py-12"
       style="background-image: url('assets/images/bg1.jpg')"
     >
-      <div class="absolute inset-0 bg-black/65"></div>
+      <div class="discont-overlay"></div>
       <div
         class="relative z-10 custom-container px-6 lg:px-20 flex flex-col lg:flex-row items-center"
       >
@@ -705,15 +716,15 @@
         <!-- Heading -->
         <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900">
           We are now partnered with
-          <span class="text-orange-500">Swiggy</span> &
-          <span class="text-red-600">Zomato</span>
+          <span style="color: #f97316">Swiggy</span> &
+          <span style="color: #dc2626">Zomato</span>
         </h2>
         <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
           Enjoy your favorite dishes from our restaurant delivered to your
           doorstep through
           <span class="font-semibold">Swiggy</span> and
           <span class="font-semibold">Zomato</span>. Fresh, hot, and fast – just
-          the way you love it! 🍽️
+          the way you love it!
         </p>
 
         <!-- Logos + Buttons -->
@@ -727,12 +738,7 @@
               alt="Swiggy"
               class="w-28 h-auto mb-4"
             />
-            <a
-              href="#"
-              class="bg-orange-500 text-white font-semibold py-2 px-6 rounded-full hover:bg-orange-600 transition duration-300"
-            >
-              Order on Swiggy
-            </a>
+            <a href="#" class="swiggy-btn"> Order on Swiggy </a>
           </div>
 
           <!-- Zomato -->
@@ -742,12 +748,7 @@
               alt="Zomato"
               class="w-28 h-auto mb-4"
             />
-            <a
-              href="#"
-              class="bg-red-600 text-white font-semibold py-2 px-6 rounded-full hover:bg-red-700 transition duration-300"
-            >
-              Order on Zomato
-            </a>
+            <a href="#" class="zomato-btn"> Order on Zomato </a>
           </div>
         </div>
       </div>
