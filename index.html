@@ -19,6 +19,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- CDN Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Start Header Section -->
@@ -58,21 +69,21 @@
               </li>
               <li>
                 <a
-                  href="menu.html"
+                  href="about.html"
                   class="text-white font-medium hover:text-[#e3000e] text-xl transition duration-300 ease-in-out transform"
                   >About</a
                 >
               </li>
               <li>
                 <a
-                  href="about.html"
+                  href="menu.html"
                   class="text-white font-medium hover:text-[#e3000e] text-xl transition duration-300 ease-in-out transform"
                   >Menu</a
                 >
               </li>
               <li>
                 <a
-                  href="book.html"
+                  href="contact.html"
                   class="text-white font-medium hover:text-[#e3000e] text-xl transition duration-300 ease-in-out transform"
                   >Contact</a
                 >
@@ -93,21 +104,21 @@
             </li>
             <li>
               <a
-                href="menu.html"
+                href="about.html"
                 class="block px-4 py-2 text-white font-medium hover:text-[#e3000e] text-lg"
                 >About</a
               >
             </li>
             <li>
               <a
-                href="about.html"
+                href="menu.html"
                 class="block px-4 py-2 text-white font-medium hover:text-[#e3000e] text-lg"
                 >Menu</a
               >
             </li>
             <li>
               <a
-                href="book.html"
+                href="contact.html"
                 class="block px-4 py-2 text-white font-medium hover:text-[#e3000e] text-lg"
                 >Contact</a
               >
@@ -139,16 +150,21 @@
           >
             <div class="custom-container">
               <div class="flex flex-col md:flex-row items-center">
-                <div class="w-full md:w-1/2 lg:w-2/3 text-white">
+                <div class="w-full md:w-1/2 lg:w-2/3 text-white" data-aos="fade-right">
                   <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-                    Premium Burgers
+                    Royal Flavors
                   </h2>
                   <p class="text-gray-300 mb-8 text-lg">
-                    Our signature burgers made with 100% organic beef and fresh
-                    ingredients. Handcrafted to perfection for the ultimate
-                    dining experience.
+                    Classic dishes created with elegance and a touch of royalty.
                   </p>
-                  <a href="#" class="custom-btn"> Order Now </a>
+                  <a
+                    href="https://wa.me/919482638911"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="custom-btn"
+                  >
+                    Order Now
+                  </a>
                 </div>
               </div>
             </div>
@@ -163,14 +179,19 @@
               <div class="flex flex-col md:flex-row items-center">
                 <div class="w-full md:w-1/2 lg:w-1/2 text-white">
                   <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-                    Crispy Chicken
+                    Food Harmony
                   </h2>
                   <p class="text-gray-300 mb-8 text-lg">
-                    Golden crispy chicken with our special blend of herbs and
-                    spices. Juicy on the inside, crunchy on the outside -
-                    perfection in every bite.
+                    Balanced flavors crafted to bring joy and satisfaction.
                   </p>
-                  <a href="#" class="custom-btn"> Order Now </a>
+                  <a
+                    href="https://wa.me/919482638911"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="custom-btn"
+                  >
+                    Order Now
+                  </a>
                 </div>
               </div>
             </div>
@@ -185,14 +206,19 @@
               <div class="flex flex-col md:flex-row items-center">
                 <div class="w-full md:w-1/2 lg:w-1/2 text-white">
                   <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-                    Fresh Salads
+                    Taste Legacy
                   </h2>
                   <p class="text-gray-300 mb-8 text-lg">
-                    Healthy and delicious salads made with farm-fresh
-                    vegetables. Perfect for those seeking a lighter but equally
-                    tasty option.
+                    Carrying forward timeless recipes loved for generations.
                   </p>
-                  <a href="#" class="custom-btn"> Order Now </a>
+                  <a
+                    href="https://wa.me/919482638911"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="custom-btn"
+                  >
+                    Order Now
+                  </a>
                 </div>
               </div>
             </div>
@@ -201,7 +227,7 @@
 
         <!-- Indicators -->
         <div
-          class="absolute bottom-0 left-1/6 -translate-x-1/2 flex space-x-5 z-10"
+          class="absolute bottom-0 left-1/6 -translate-x-1/2 flex space-x-5 z-10 hidden lg:block"
         >
           <button
             class="carousel-indicator w-2 h-2 rounded-full bg-white/50 hover:bg-[#e3000e] transition"
@@ -221,35 +247,41 @@
     <!-- End Slider Section -->
 
     <!-- About Area Start -->
-    <div class="py-20 bg-white">
+    <div class="py-20 bg-white w-full lg:w-[80%] mx-auto">
       <div class="custom-container px-4">
         <div class="flex flex-col xl:flex-row items-center">
           <div class="w-full xl:w-1/2 mb-12 lg:mb-0">
-            <div class="mb-12">
+            <div class="mb-12" data-aos="fade-right">
               <!-- Section Title -->
-              <div class="mb-8">
+              <div class="mb-8" >
                 <span class="text-lg font-medium text-primary-color"
-                  >Discover Your Test</span
+                  >Discover Your Taste</span
                 >
                 <h2 class="text-3xl md:text-4xl font-bold mt-2">
-                  We Provide Good Food For Your Family!
+                  Serving Delicious Food for Your Family
                 </h2>
               </div>
               <p class="mb-6 text-md md:text-lg">
-                Ut enim acgsd minim veniam, quxcis nostrud exercitation ullamco
-                laboris nisi ufsit aliquip ex ea commodo consequat is aute irure
-                m, quis nostrud exer. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Impedit cupiditate ea ipsam excepturi delectus
-                pariatur saepe provident quis aliquid maiores incidunt eaque ut
-                quos quae, assumenda rem? Quia eligendi magnam, rerum harum
-                optio quod veniam vitae repellendus perferendis, maxime nesciunt
-                odit rem fuga fugiat accusantium animi amet vero molestiae
-                mollitia! Minima voluptatem eum adipisci assumenda, enim commodi
-                corrupti debitis, molestiae maxime et consequatur tenetur velit
-                a! Tempore fuga, cumque laboriosam possimus non dolorem impedit
-                animi, consequuntur totam excepturi nulla accusamus, placeat
-                itaque deserunt neque harum. Beatae asperiores esse dolores,
-                nulla numquam atque amet minus ea! Ab vero tempora modi velit?
+                At our restaurant, we believe that food is more than just a meal
+                — it is a way of connecting people, creating memories, and
+                celebrating togetherness. Every dish we prepare carries the
+                essence of tradition, the freshness of carefully chosen
+                ingredients, and the passion of our chefs who pour their heart
+                into every recipe. We are committed to serving food that is not
+                only delicious but also wholesome and satisfying for the entire
+                family.
+                <br />
+                From aromatic biriyanis and juicy kebabs to comforting snacks
+                and refreshing drinks, our menu is designed to offer something
+                for everyone. Whether you’re enjoying a simple weekday dinner,
+                treating your loved ones on the weekend, or celebrating a
+                special occasion, we make sure that every plate served brings
+                joy to the table.
+                <br />
+                We blend authentic flavors with a modern touch, making each bite
+                feel like home. Our space brings families and friends together
+                to enjoy food made with love. For us, meals are more than food —
+                they create joy, bonds, and memories.
               </p>
             </div>
             <!-- <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -295,7 +327,7 @@
               </div>
             </div> -->
           </div>
-          <div class="w-full lg:w-1/2">
+          <div class="w-full lg:w-1/2" data-aos="fade-left">
             <!-- about-img -->
             <div class="lg:pl-12">
               <img
@@ -310,7 +342,7 @@
     </div>
     <!-- About Area End -->
 
-    <section class="py-16 bg-white">
+    <section class="py-16 bg-white" data-aos="fade-up">
       <div class="custom-container px-4">
         <!-- Heading -->
         <div class="text-center mb-12">
@@ -321,53 +353,21 @@
         <ul
           class="flex flex-wrap justify-center gap-2 md:gap-4 mb-12 list-none p-0"
         >
-          <li
-          class="menu-list active-list"
-          >
-            All
-          </li>
-          <li
-            class="menu-list"
-            data-filter=".burger"
-          >
-            Biryani Specials
-          </li>
-          <li
-            class="menu-list"
-            data-filter=".pizza"
-          >
-            Non-Veg Starters
-          </li>
-          <li
-            class="menu-list"
-            data-filter=".pasta"
-          >
-            Veg Starters
-          </li>
-          <li
-            class="menu-list"
-            data-filter=".fries"
-          >
-            Rice & Noodles
-          </li>
+          <li class="menu-list active-list">All</li>
+          <li class="menu-list" data-filter=".burger">Biryani Specials</li>
+          <li class="menu-list" data-filter=".pizza">Non-Veg Starters</li>
+          <li class="menu-list" data-filter=".pasta">Veg Starters</li>
+          <li class="menu-list" data-filter=".fries">Rice & Noodles</li>
 
-          <li
-            class="menu-list"
-            data-filter=".fries"
-          >
-            Quick Bites
-          </li>
+          <li class="menu-list" data-filter=".fries">Quick Bites</li>
 
-          <li
-            class="menu-list"
-            data-filter=".fries"
-          >
-            South Indian Snacks
-          </li>
+          <li class="menu-list" data-filter=".fries">South Indian Snacks</li>
         </ul>
 
         <!-- Food Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 w-full lg:w-[90%] mx-auto"
+        >
           <div
             class="relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-al"
           >
@@ -563,29 +563,33 @@
           <h2
             class="text-3xl lg:text-5xl font-extrabold text-white leading-snug"
           >
-            December sale is on! <br />
-            with big <span class="text-primary-color">Discount...</span>
+            Authentic taste with <br />
+            a modern touch at
+            <span class="text-primary-color">ChefD Restaurant</span>
           </h2>
 
-          <button
-            class="mt-6 bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-full transition duration-300"
+          <a
+            href="https://wa.me/919482638911"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="custom-btn mt-5"
           >
-            Shop Now
-          </button>
+            Order Now
+          </a>
         </div>
       </div>
     </section>
 
     <!-- Our Services Start -->
-    <div class="py-20 bg-white">
+    <div class="py-20 bg-white" data-aos="fade-up">
       <div class="custom-container px-4">
         <!-- Section Heading -->
         <div class="flex justify-center">
           <div class="w-full lg:w-8/12 xl:w-7/12">
             <div class="text-center mb-16">
-              <span class="text-lg font-medium text-primary-color block mb-2"
-                >Services We Offer</span
-              >
+              <span class="text-lg font-medium text-primary-color block mb-2">
+                Services We Offer
+              </span>
               <h2 class="text-3xl md:text-4xl font-bold">Our Best Services</h2>
             </div>
           </div>
@@ -597,121 +601,116 @@
           <div
             class="text-center p-8 rounded-lg transform transition-all duration-300 shadow-lg hover:scale-105"
           >
-            <div class="text-5xl text-green-600 mb-6">
-              <span class="flaticon-restaurant">👨‍🍳</span>
+            <div class="text-5xl text-primary-color mb-6">
+              <i class="fas fa-user-tie"></i>
             </div>
             <div class="services-content">
-              <h5 class="text-xl font-semibold mb-3">
-                <a href="#" class="hover:text-green-600 transition"
-                  >Best Chef</a
-                >
-              </h5>
+              <h5 class="text-xl font-semibold mb-3">Expert Chefs</h5>
               <p class="text-gray-600">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore.
+                Our talented chefs bring authentic flavors and creativity to
+                every dish.
               </p>
             </div>
           </div>
 
-          <!-- Service 2 (Active) -->
+          <!-- Service 2 -->
           <div
             class="text-center p-8 rounded-lg transform transition-all duration-300 shadow-lg hover:scale-105"
           >
-            <div class="text-5xl text-green-600 mb-6">
-              <span class="flaticon-tools-and-utensils-1">🍽️</span>
+            <div class="text-5xl text-primary-color mb-6">
+              <i class="fas fa-utensils"></i>
             </div>
             <div class="services-content">
-              <h5 class="text-xl font-semibold mb-3">
-                <a href="#" class="hover:text-green-600 transition"
-                  >Quality Food</a
-                >
-              </h5>
+              <h5 class="text-xl font-semibold mb-3">Quality Food</h5>
               <p class="text-gray-600">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore.
+                Fresh ingredients and careful cooking ensure every plate is full
+                of flavor.
               </p>
             </div>
           </div>
 
           <!-- Service 3 -->
           <div
-            class="text-center p-8 rounded-lg transition-all duration-300 shadow-lg hover:scale-105"
+            class="text-center p-8 rounded-lg transform transition-all duration-300 shadow-lg hover:scale-105"
           >
-            <div class="text-5xl text-green-600 mb-6">
-              <span class="flaticon-restaurant">🔥</span>
+            <div class="text-5xl text-primary-color mb-6">
+              <i class="fas fa-concierge-bell"></i>
             </div>
             <div class="services-content">
-              <h5 class="text-xl font-semibold mb-3">
-                <a href="#" class="hover:text-green-600 transition"
-                  >Perfect Cook</a
-                >
-              </h5>
+              <h5 class="text-xl font-semibold mb-3">Friendly Service</h5>
               <p class="text-gray-600">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore.
+                Our staff ensures a welcoming atmosphere and attentive service
+                for all.
               </p>
             </div>
           </div>
+
+          <!-- Service 4 -->
           <div
-            class="text-center p-8 rounded-lg transition-all duration-300 shadow-lg hover:scale-105"
+            class="text-center p-8 rounded-lg transform transition-all duration-300 shadow-lg hover:scale-105"
           >
-            <div class="text-5xl text-green-600 mb-6">
-              <span class="flaticon-restaurant">🔥</span>
+            <div class="text-5xl text-primary-color mb-6">
+              <i class="fas fa-couch"></i>
             </div>
             <div class="services-content">
               <h5 class="text-xl font-semibold mb-3">
-                <a href="#" class="hover:text-green-600 transition"
-                  >Perfect Cook</a
-                >
+                <a href="#" class="hover:text-green-600 transition">
+                  Cozy Ambience
+                </a>
               </h5>
               <p class="text-gray-600">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore.
+                Relax in our warm and inviting atmosphere designed for family
+                gatherings, friends, and special moments.
               </p>
             </div>
           </div>
+
+          <!-- Service 5 -->
           <div
-            class="text-center p-8 rounded-lg transition-all duration-300 shadow-lg hover:scale-105"
+            class="text-center p-8 rounded-lg transform transition-all duration-300 shadow-lg hover:scale-105"
           >
-            <div class="text-5xl text-green-600 mb-6">
-              <span class="flaticon-restaurant">🔥</span>
+            <div class="text-5xl text-primary-color mb-6">
+              <i class="fas fa-seedling"></i>
             </div>
             <div class="services-content">
               <h5 class="text-xl font-semibold mb-3">
                 <a href="#" class="hover:text-green-600 transition"
-                  >Perfect Cook</a
+                  >Fresh Ingredients</a
                 >
               </h5>
               <p class="text-gray-600">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore.
+                We carefully select farm-fresh ingredients to deliver the best
+                taste.
               </p>
             </div>
           </div>
+
+          <!-- Service 6 -->
           <div
-            class="text-center p-8 rounded-lg transition-all duration-300 shadow-lg hover:scale-105"
+            class="text-center p-8 rounded-lg transform transition-all duration-300 shadow-lg hover:scale-105"
           >
-            <div class="text-5xl text-green-600 mb-6">
-              <span class="flaticon-restaurant">🔥</span>
+            <div class="text-5xl text-primary-color mb-6">
+              <i class="fas fa-birthday-cake"></i>
             </div>
             <div class="services-content">
               <h5 class="text-xl font-semibold mb-3">
                 <a href="#" class="hover:text-green-600 transition"
-                  >Perfect Cook</a
+                  >Special Events</a
                 >
               </h5>
               <p class="text-gray-600">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore.
+                Celebrate birthdays, anniversaries, and gatherings with our
+                special menus.
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <!-- Our Services End -->
 
-    <section class="py-16">
+    <section class="py-16" data-aos="fade-up">
       <div class="container mx-auto px-6 lg:px-20 text-center">
         <!-- Heading -->
         <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900">
@@ -720,11 +719,10 @@
           <span style="color: #dc2626">Zomato</span>
         </h2>
         <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
-          Enjoy your favorite dishes from our restaurant delivered to your
-          doorstep through
-          <span class="font-semibold">Swiggy</span> and
-          <span class="font-semibold">Zomato</span>. Fresh, hot, and fast – just
-          the way you love it!
+          Order your favorite meals from our restaurant on
+          <span class="font-semibold">Swiggy</span> or
+          <span class="font-semibold">Zomato</span> and get them delivered hot
+          and fresh to your door.
         </p>
 
         <!-- Logos + Buttons -->
@@ -760,163 +758,138 @@
       style="background-image: url('assets/images/footer-bg.jpg')"
     >
       <div class="footer-overlay"></div>
-      <div class="relative z-10 custom-container px-4">
+      <div class="relative z-10 custom-container">
         <div class="pt-16">
-          <div class="flex flex-wrap -mx-4 justify-between">
+          <!-- Responsive Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
             <!-- Logo Column -->
-            <div class="w-full md:w-1/2 lg:w-1/4 xl:w-1/4 px-4 mb-12 md:mb-0">
-              <div class="mb-12">
-                <div class="mb-8">
-                  <a href="index.html">
-                    <img
-                      src="assets/images/logo/brand-logo-1.png"
-                      alt="Logo"
-                      width="120"
-                    />
+            <div>
+              <div class="mb-8">
+                <a href="index.html">
+                  <img
+                    src="assets/images/logo/brand-logo-1.png"
+                    alt="Logo"
+                    width="120"
+                  />
+                </a>
+              </div>
+              <p class="text-white">
+                ChefD serves authentic flavors with passion and care, bringing
+                you delicious meals made with fresh ingredients.
+              </p>
+              <div class="mt-6">
+                <h4 class="text-white text-lg font-bold mb-4">Follow Us</h4>
+                <div class="flex gap-5 text-xl">
+                  <a
+                    href="https://maps.app.goo.gl/qAtzNm2BdJLvo2pE8?g_st=com.google.maps.preview.copy"
+                    target="_blank"
+                    class="text-white hover:text-[#e3000e] duration-300 transition"
+                  >
+                    <i class="fab fa-facebook-f"></i>
                   </a>
-                </div>
-                <p class="text-white">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Architecto distinctio voluptatem recusandae necessitatibus
-                </p>
-
-                <div class="pace-x-4">
-                  <h4 class="text-white text-lg font-bold mt-6 mb-5">
-                    Follow Us
-                  </h4>
-                  <div class="flex gap-5 text-xl">
-                    <a
-                      href="#"
-                      class="text-white hover:text-[#e3000e] duration-300 transition"
-                      ><i class="fab fa-twitter"></i
-                    ></a>
-                    <a
-                      href="#"
-                      class="text-white hover:text-[#e3000e] duration-300 transition"
-                      ><i class="fab fa-facebook-f"></i
-                    ></a>
-                    <a
-                      href="#"
-                      class="text-white hover:text-[#e3000e] duration-300 transition"
-                      ><i class="fas fa-globe"></i
-                    ></a>
-                    <a
-                      href="#"
-                      class="text-white hover:text-[#e3000e] duration-300 transition"
-                      ><i class="fab fa-instagram"></i
-                    ></a>
-                  </div>
+                  <a
+                    href="https://www.instagram.com/chefd_muttonbiriyani?igsh=MXBjbGY0YjFuY3hlZw%3D%3D&utm_source=qr"
+                    target="_blank"
+                    class="text-white hover:text-[#e3000e] duration-300 transition"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
                 </div>
               </div>
             </div>
 
             <!-- Navigation Column -->
-            <div class="w-1/2 md:w-1/4 lg:w-1/6 xl:w-1/6 px-4 mb-12">
-              <div class="mb-8">
-                <h4 class="text-white text-lg font-bold mb-6">Navigation</h4>
-                <ul class="space-y-3">
-                  <li>
-                    <a
-                      href="#"
-                      class="text-white hover:text-[#e3000e] duration-300 transition"
-                      >Home</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="text-white hover:text-[#e3000e] duration-300 transition"
-                      >About</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="text-white hover:text-[#e3000e] duration-300 transition"
-                      >Menu</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="text-white hover:text-[#e3000e] duration-300 transition"
-                      >Contact</a
-                    >
-                  </li>
-                </ul>
-              </div>
+            <div>
+              <h4 class="text-white text-lg font-bold mb-6">Navigation</h4>
+              <ul class="space-y-3">
+                <li>
+                  <a
+                    href="index.html"
+                    class="text-white hover:text-[#e3000e] transition"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="about.html"
+                    class="text-white hover:text-[#e3000e] transition"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="menu.html"
+                    class="text-white hover:text-[#e3000e] transition"
+                    >Menu</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="contact.html"
+                    class="text-white hover:text-[#e3000e] transition"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
             </div>
 
-            <!-- Useful Links Column -->
-            <div class="w-1/2 md:w-1/4 lg:w-1/6 xl:w-1/6 px-4 mb-12">
-              <div class="mb-8">
-                <h4 class="text-white text-lg font-bold mb-6">Address</h4>
-                <ul class="space-y-3">
-                  <li>
-                    <a
-                      href="#"
-                      class="text-white hover:text-[#e3000e] duration-300 transition"
-                      >Registration</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="text-white hover:text-[#e3000e] duration-300 transition"
-                      >Login</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="text-white hover:text-[#e3000e] duration-300 transition"
-                      >Policy</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="text-white hover:text-[#e3000e] duration-300 transition"
-                      >Terms & Conditions</a
-                    >
-                  </li>
-                </ul>
-              </div>
+            <!-- Address Column -->
+            <div>
+              <h4 class="text-white text-lg font-bold mb-6">Address</h4>
+              <ul class="space-y-3 text-white">
+                <li>
+                  <i class="fas fa-map-marker-alt text-primary-color mr-2"></i>
+                  RR Sai complex, Opp: Mahaveer Dazzle, Basavanna Nagar Main
+                  road, Mahadevapura, Hoodi, Whitefield, Bengaluru, Karnataka
+                  560048
+                </li>
+                <li>
+                  <a class="hover:text-[#e3000e]" href="tel:+919482638911">
+                    <i class="fas fa-phone text-primary-color mr-2"></i>
+                    +91 94826 38911
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="hover:text-[#e3000e]"
+                    href="mailto:chefdosti@gmail.com"
+                  >
+                    <i class="fas fa-envelope text-primary-color mr-2"></i>
+                    chefdosti@gmail.com
+                  </a>
+                </li>
+              </ul>
             </div>
 
-            <!-- Instagram Column -->
-            <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-4">
-              <div class="mb-8">
-                <h4 class="text-white text-lg font-bold mb-6">Location</h4>
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31236.39582305075!2d75.34957854491479!3d11.8667766047777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba422b9b2aca753%3A0x380605a11ce24f6c!2sKannur%2C%20Kerala!5e0!3m2!1sen!2sin!4v1755417951793!5m2!1sen!2sin"
-                  width="250"
-                  height="150"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
+            <!-- Location Column -->
+            <div>
+              <h4 class="text-white text-lg font-bold mb-6">Location</h4>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.7311462869734!2d77.7185355!3d12.989040099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae11004fc908c3%3A0x25972badc1769899!2sChefD%20Mutton%20Biriyani!5e0!3m2!1sen!2sin!4v1756648188086!5m2!1sen!2sin"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                width="100%"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
         </div>
 
-        <div class="py-8 border-t border-gray-700">
-          <div class="flex flex-wrap -mx-4 items-center justify-between">
-            <div class="w-full px-4">
-              <p class="text-white text-sm text-center">
-                Copyright &copy;
-                <script>
-                  document.write(new Date().getFullYear());
-                </script>
-                All rights reserved by ChefD
-              </p>
-            </div>
-          </div>
+        <!-- Footer Bottom -->
+        <div class="py-6 border-t border-gray-700 mt-10">
+          <p class="text-white text-sm text-center">
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            All rights reserved by
+            <span class="font-bold text-primary-color">ChefD</span>
+          </p>
         </div>
       </div>
     </footer>
+
     <!-- Footer End -->
 
     <script>
@@ -931,5 +904,15 @@
 
     <!-- Custom Script -->
     <script src="script.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 600,
+        easing: "ease-out",
+        offset: 80,
+      });
+    </script>
   </body>
 </html>

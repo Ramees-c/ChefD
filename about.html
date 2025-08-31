@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChefD</title>
+
+    <!-- Tailwindcss CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- CDN Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Start Header Section -->
+    <header class="bg-custom-black shadow-md">
+      <div class="custom-container">
+        <nav class="flex items-center justify-between py-4">
+          <!-- Logo -->
+          <a href="index.html"
+            ><img
+              src="assets/images/logo/brand-logo-1.png"
+              alt=""
+              class="w-[120px]"
+          /></a>
+
+          <!-- Mobile menu button -->
+          <div class="lg:hidden">
+            <button
+              class="navbar-toggler focus:outline-none"
+              type="button"
+              aria-label="Toggle navigation"
+            >
+              <span class="block w-6 h-0.5 bg-primary mb-1"></span>
+              <span class="block w-6 h-0.5 bg-primary mb-1"></span>
+              <span class="block w-6 h-0.5 bg-primary"></span>
+            </button>
+          </div>
+
+          <!-- Navigation Links -->
+          <div class="hidden lg:flex lg:items-center lg:justify-between">
+            <ul class="flex space-x-20">
+              <li>
+                <a
+                  href="index.html"
+                  class="text-white font-medium hover:text-[#e3000e] text-xl transition duration-300 ease-in-out transform"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="active text-white font-medium hover:text-[#e3000e] text-xl transition duration-300 ease-in-out transform"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="menu.html"
+                  class="text-white font-medium hover:text-[#e3000e] text-xl transition duration-300 ease-in-out transform"
+                  >Menu</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-white font-medium hover:text-[#e3000e] text-xl transition duration-300 ease-in-out transform"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Mobile menu (hidden by default) -->
+        <div class="lg:hidden hidden" id="mobile-menu">
+          <ul class="py-4 space-y-2">
+            <li>
+              <a
+                href="index.html"
+                class="block px-4 py-2 text-white font-medium hover:text-[#e3000e] text-lg"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="block px-4 py-2 text-white font-medium hover:text-[#e3000e] text-lg"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="menu.html"
+                class="block px-4 py-2 text-white font-medium hover:text-[#e3000e] text-lg"
+                >Menu</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="block px-4 py-2 text-white font-medium hover:text-[#e3000e] text-lg"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- End Header Section -->
+    <section class="about-section">
+      <div class="about-content" data-aos="fade-right">
+        <h2>About Us</h2>
+      </div>
+    </section>
+
+    <section class="services-section">
+      <!-- Card 1 -->
+      <div class="service-card">
+        <div class="service-text" data-aos="fade-right">
+          <h3>Variety of Biryanis</h3>
+          <p>
+            At ChefD, we offer a rich selection of authentic biryanis. Our menu
+            includes Mutton Dum Biryani (Hyderabadi), Mutton Dum Biryani ChefD
+            (jeera samba rice), Chicken Dum Biryani (Hyderabadi), and Chicken
+            Dum Biryani ChefD (jeera samba rice). Each is slow-cooked with fresh
+            ingredients and traditional spices to bring you unmatched flavor and
+            aroma.
+          </p>
+        </div>
+        <div class="service-image" data-aos="fade-left">
+          <img src="assets/images/about-1.jpg" alt="Signature Biryanis" />
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="service-card reverse">
+        <div class="service-text" data-aos="fade-left">
+          <h3>Delicious Kebabs</h3>
+          <p>
+            Our juicy and tender kebabs are marinated with traditional spices
+            and grilled to perfection. Whether enjoyed as a starter or a main,
+            they bring out the true flavors of ChefD’s kitchen.
+          </p>
+        </div>
+        <div class="service-image" data-aos="fade-right">
+          <img src="assets/images/about-2.jpg" alt="Delicious Kebabs" />
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="service-card">
+        <div class="service-text" data-aos="fade-right">
+          <h3>Family Dining</h3>
+          <p>
+            ChefD is more than just food — it’s about sharing moments. Our warm
+            and welcoming space is perfect for families and friends to gather,
+            enjoy hearty meals, and create lasting memories together.
+          </p>
+        </div>
+        <div class="service-image" data-aos="fade-left">
+          <img src="assets/images/about-3.jpg" alt="Family Dining" />
+        </div>
+      </div>
+    </section>
+
+    <section class="mission-vision">
+      <div class="mv-container">
+        <!-- Mission -->
+        <div class="mv-card" data-aos="fade-up">
+          <i class="fas fa-bullseye mv-icon"></i>
+          <h3>Our Mission</h3>
+          <p>
+            At ChefD, our mission is to serve authentic, flavorful food that
+            brings families and friends together. We are committed to
+            maintaining the highest quality standards, using fresh ingredients,
+            and creating memorable dining experiences with every meal.
+          </p>
+        </div>
+
+        <!-- Vision -->
+        <div class="mv-card" data-aos="fade-up">
+          <i class="fas fa-eye mv-icon"></i>
+          <h3>Our Vision</h3>
+          <p>
+            Our vision is to make ChefD a household name for biryanis and
+            traditional delicacies. We aim to spread the rich taste of our
+            cuisine across communities while becoming a trusted destination for
+            food made with passion and love.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Start -->
+    <footer
+      class="relative bg-cover bg-no-repeat"
+      style="background-image: url('assets/images/footer-bg.jpg')"
+    >
+      <div class="footer-overlay"></div>
+      <div class="relative z-10 custom-container">
+        <div class="pt-16">
+          <!-- Responsive Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+            <!-- Logo Column -->
+            <div>
+              <div class="mb-8">
+                <a href="index.html">
+                  <img
+                    src="assets/images/logo/brand-logo-1.png"
+                    alt="Logo"
+                    width="120"
+                  />
+                </a>
+              </div>
+              <p class="text-white">
+                ChefD serves authentic flavors with passion and care, bringing
+                you delicious meals made with fresh ingredients.
+              </p>
+              <div class="mt-6">
+                <h4 class="text-white text-lg font-bold mb-4">Follow Us</h4>
+                <div class="flex gap-5 text-xl">
+                  <a
+                    href="https://maps.app.goo.gl/qAtzNm2BdJLvo2pE8?g_st=com.google.maps.preview.copy"
+                    target="_blank"
+                    class="text-white hover:text-[#e3000e] duration-300 transition"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/chefd_muttonbiriyani?igsh=MXBjbGY0YjFuY3hlZw%3D%3D&utm_source=qr"
+                    target="_blank"
+                    class="text-white hover:text-[#e3000e] duration-300 transition"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Navigation Column -->
+            <div>
+              <h4 class="text-white text-lg font-bold mb-6">Navigation</h4>
+              <ul class="space-y-3">
+                <li>
+                  <a
+                    href="index.html"
+                    class="text-white hover:text-[#e3000e] transition"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="about.html"
+                    class="text-white hover:text-[#e3000e] transition"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="menu.html"
+                    class="text-white hover:text-[#e3000e] transition"
+                    >Menu</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="contact.html"
+                    class="text-white hover:text-[#e3000e] transition"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Address Column -->
+            <div>
+              <h4 class="text-white text-lg font-bold mb-6">Address</h4>
+              <ul class="space-y-3 text-white">
+                <li>
+                  <i class="fas fa-map-marker-alt text-primary-color mr-2"></i>
+                  RR Sai complex, Opp: Mahaveer Dazzle, Basavanna Nagar Main
+                  road, Mahadevapura, Hoodi, Whitefield, Bengaluru, Karnataka
+                  560048
+                </li>
+                <li>
+                  <a class="hover:text-[#e3000e]" href="tel:+919482638911">
+                    <i class="fas fa-phone text-primary-color mr-2"></i>
+                    +91 94826 38911
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="hover:text-[#e3000e]"
+                    href="mailto:chefdosti@gmail.com"
+                  >
+                    <i class="fas fa-envelope text-primary-color mr-2"></i>
+                    chefdosti@gmail.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Location Column -->
+            <div>
+              <h4 class="text-white text-lg font-bold mb-6">Location</h4>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.7311462869734!2d77.7185355!3d12.989040099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae11004fc908c3%3A0x25972badc1769899!2sChefD%20Mutton%20Biriyani!5e0!3m2!1sen!2sin!4v1756648188086!5m2!1sen!2sin"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                width="100%"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="py-6 border-t border-gray-700 mt-10">
+          <p class="text-white text-sm text-center">
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            All rights reserved by
+            <span class="font-bold text-primary-color">ChefD</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer End -->
+  </body>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+      duration: 600,
+      easing: "ease-out",
+      offset: 80,
+    });
+  </script>
+</html>

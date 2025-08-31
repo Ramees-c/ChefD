@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChefD</title>
+
+    <!-- Tailwindcss CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- CDN Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <!-- Start Header Section -->
+  <header class="bg-custom-black shadow-md">
+    <div class="custom-container">
+      <nav class="flex items-center justify-between py-4">
+        <!-- Logo -->
+        <a href="index.html"
+          ><img
+            src="assets/images/logo/brand-logo-1.png"
+            alt=""
+            class="w-[120px]"
+        /></a>
+
+        <!-- Mobile menu button -->
+        <div class="lg:hidden">
+          <button
+            class="navbar-toggler focus:outline-none"
+            type="button"
+            aria-label="Toggle navigation"
+          >
+            <span class="block w-6 h-0.5 bg-primary mb-1"></span>
+            <span class="block w-6 h-0.5 bg-primary mb-1"></span>
+            <span class="block w-6 h-0.5 bg-primary"></span>
+          </button>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="hidden lg:flex lg:items-center lg:justify-between">
+          <ul class="flex space-x-20">
+            <li>
+              <a
+                href="index.html"
+                class="text-white font-medium hover:text-[#e3000e] text-xl transition duration-300 ease-in-out transform"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="text-white font-medium hover:text-[#e3000e] text-xl transition duration-300 ease-in-out transform"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="menu.html"
+                class="text-white font-medium hover:text-[#e3000e] text-xl transition duration-300 ease-in-out transform"
+                >Menu</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="active text-white font-medium hover:text-[#e3000e] text-xl transition duration-300 ease-in-out transform"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Mobile menu (hidden by default) -->
+      <div class="lg:hidden hidden" id="mobile-menu">
+        <ul class="py-4 space-y-2">
+          <li>
+            <a
+              href="index.html"
+              class="block px-4 py-2 text-white font-medium hover:text-[#e3000e] text-lg"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="about.html"
+              class="block px-4 py-2 text-white font-medium hover:text-[#e3000e] text-lg"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="menu.html"
+              class="block px-4 py-2 text-white font-medium hover:text-[#e3000e] text-lg"
+              >Menu</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="block px-4 py-2 text-white font-medium hover:text-[#e3000e] text-lg"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- End Header Section -->
+  <body>
+    <section class="about-section">
+      <div class="about-content" data-aos="fade-right">
+        <h2>Contact US</h2>
+      </div>
+    </section>
+
+    <section class="contact-page">
+      <div class="contact-container">
+        <!-- Contact Form -->
+        <div class="contact-form" data-aos="fade-right">
+          <h2>Contact Us</h2>
+          <form id="whatsappForm" novalidate>
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Your Name" />
+              <small class="error" id="nameError"></small>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Your Email" />
+              <small class="error" id="emailError"></small>
+            </div>
+            <div class="form-group">
+              <input type="tel" id="phone" placeholder="Your Phone" />
+              <small class="error" id="phoneError"></small>
+            </div>
+            <div class="form-group">
+              <textarea
+                id="message"
+                rows="5"
+                placeholder="Your Message"
+              ></textarea>
+              <small class="error" id="messageError"></small>
+            </div>
+            <button class="custom-btn" type="submit">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Address, Map & Social Media -->
+        <div class="contact-info" data-aos="fade-left">
+          <h2>Our Address</h2>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> RR Sai complex, Opp: Mahaveer
+            Dazzle, Basavanna Nagar Main road, Mahadevapura, Hoodi, Whitefield,
+            Bengaluru, Karnataka 560048
+          </p>
+          <p>
+            <a class="hover:text-[#e3000e]" href="tel:+919482638911">
+              <i class="fas fa-phone text-primary-color mr-2"></i>
+              +91 94826 38911
+            </a>
+          </p>
+          <p>
+            <a class="hover:text-[#e3000e]" href="mailto:chefdosti@gmail.com">
+              <i class="fas fa-envelope text-primary-color mr-2"></i>
+              chefdosti@gmail.com
+            </a>
+          </p>
+
+          <!-- Google Map -->
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.7311462869734!2d77.7185355!3d12.989040099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae11004fc908c3%3A0x25972badc1769899!2sChefD%20Mutton%20Biriyani!5e0!3m2!1sen!2sin!4v1756648188086!5m2!1sen!2sin"
+              height="250"
+              width="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            >
+            </iframe>
+          </div>
+
+          <!-- Social Media Section -->
+          <div class="social-media">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+              <a
+                href="https://maps.app.goo.gl/qAtzNm2BdJLvo2pE8?g_st=com.google.maps.preview.copy"
+                target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/chefd_muttonbiriyani?igsh=MXBjbGY0YjFuY3hlZw%3D%3D&utm_source=qr"
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Start -->
+    <footer
+      class="relative bg-cover bg-no-repeat"
+      style="background-image: url('assets/images/footer-bg.jpg')"
+    >
+      <div class="footer-overlay"></div>
+      <div class="relative z-10 custom-container">
+        <div class="pt-16">
+          <!-- Responsive Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+            <!-- Logo Column -->
+            <div>
+              <div class="mb-8">
+                <a href="index.html">
+                  <img
+                    src="assets/images/logo/brand-logo-1.png"
+                    alt="Logo"
+                    width="120"
+                  />
+                </a>
+              </div>
+              <p class="text-white">
+                ChefD serves authentic flavors with passion and care, bringing
+                you delicious meals made with fresh ingredients.
+              </p>
+              <div class="mt-6">
+                <h4 class="text-white text-lg font-bold mb-4">Follow Us</h4>
+                <div class="flex gap-5 text-xl">
+                  <a
+                    href="https://maps.app.goo.gl/qAtzNm2BdJLvo2pE8?g_st=com.google.maps.preview.copy"
+                    target="_blank"
+                    class="text-white hover:text-[#e3000e] duration-300 transition"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/chefd_muttonbiriyani?igsh=MXBjbGY0YjFuY3hlZw%3D%3D&utm_source=qr"
+                    target="_blank"
+                    class="text-white hover:text-[#e3000e] duration-300 transition"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Navigation Column -->
+            <div>
+              <h4 class="text-white text-lg font-bold mb-6">Navigation</h4>
+              <ul class="space-y-3">
+                <li>
+                  <a
+                    href="index.html"
+                    class="text-white hover:text-[#e3000e] transition"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="about.html"
+                    class="text-white hover:text-[#e3000e] transition"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="menu.html"
+                    class="text-white hover:text-[#e3000e] transition"
+                    >Menu</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="contact.html"
+                    class="text-white hover:text-[#e3000e] transition"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Address Column -->
+            <div>
+              <h4 class="text-white text-lg font-bold mb-6">Address</h4>
+              <ul class="space-y-3 text-white">
+                <li>
+                  <i class="fas fa-map-marker-alt text-primary-color mr-2"></i>
+                  RR Sai complex, Opp: Mahaveer Dazzle, Basavanna Nagar Main
+                  road, Mahadevapura, Hoodi, Whitefield, Bengaluru, Karnataka
+                  560048
+                </li>
+                <li>
+                  <a class="hover:text-[#e3000e]" href="tel:+919482638911">
+                    <i class="fas fa-phone text-primary-color mr-2"></i>
+                    +91 94826 38911
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="hover:text-[#e3000e]"
+                    href="mailto:chefdosti@gmail.com"
+                  >
+                    <i class="fas fa-envelope text-primary-color mr-2"></i>
+                    chefdosti@gmail.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Location Column -->
+            <div>
+              <h4 class="text-white text-lg font-bold mb-6">Location</h4>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.7311462869734!2d77.7185355!3d12.989040099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae11004fc908c3%3A0x25972badc1769899!2sChefD%20Mutton%20Biriyani!5e0!3m2!1sen!2sin!4v1756648188086!5m2!1sen!2sin"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                width="100%"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="py-6 border-t border-gray-700 mt-10">
+          <p class="text-white text-sm text-center">
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            All rights reserved by
+            <span class="font-bold text-primary-color">ChefD</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer End -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 600,
+        easing: "ease-out",
+        offset: 80,
+      });
+    </script>
+
+    <script>
+      document
+        .getElementById("whatsappForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          let isValid = true;
+
+          // Get values
+          let name = document.getElementById("name").value.trim();
+          let email = document.getElementById("email").value.trim();
+          let phone = document.getElementById("phone").value.trim();
+          let message = document.getElementById("message").value.trim();
+
+          // Clear old errors
+          document
+            .querySelectorAll(".error")
+            .forEach((el) => (el.textContent = ""));
+
+          // Validate Name
+          if (name === "") {
+            document.getElementById("nameError").textContent =
+              "Name is required.";
+            isValid = false;
+          }
+
+          // Validate Email
+          let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+          if (email === "") {
+            document.getElementById("emailError").textContent =
+              "Email is required.";
+            isValid = false;
+          } else if (!emailPattern.test(email)) {
+            document.getElementById("emailError").textContent =
+              "Enter a valid email.";
+            isValid = false;
+          }
+
+          // Validate Phone
+          let phonePattern = /^[0-9]{10}$/;
+          if (phone === "") {
+            document.getElementById("phoneError").textContent =
+              "Phone number is required.";
+            isValid = false;
+          } else if (!phonePattern.test(phone)) {
+            document.getElementById("phoneError").textContent =
+              "Enter a valid 10-digit phone.";
+            isValid = false;
+          }
+
+          // Validate Message
+          if (message === "") {
+            document.getElementById("messageError").textContent =
+              "Message cannot be empty.";
+            isValid = false;
+          }
+
+          if (!isValid) return;
+
+          // WhatsApp Number
+          let whatsappNumber = "919482638911";
+
+          // Format WhatsApp Message
+          let whatsappMessage =
+            `Hello, I would like to contact you.\n\n` +
+            `👤 Name: ${name}\n📧 Email: ${email}\n📞 Phone: ${phone}\n💬 Message: ${message}`;
+
+          // Open WhatsApp
+          let whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+            whatsappMessage
+          )}`;
+          window.open(whatsappURL, "_blank");
+        });
+    </script>
+  </body>
+</html>
