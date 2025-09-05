@@ -3,7 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ChefD</title>
+    <title>ChefD | Authentic Biryani, Kebabs & South Indian Delights</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+
+    <!-- ✅ SEO Meta -->
+    <meta
+      name="description"
+      content="ChefD serves authentic Hyderabadi biryani, kebabs, Indo-Chinese dishes, and South Indian snacks in Whitefield, Bengaluru. Visit us at RR Sai Complex, Opp: Mahaveer Dazzle, Basavanna Nagar Main Road, Mahadevapura, Hoodi."
+    />
+    <meta
+      name="keywords"
+      content="ChefD, Hyderabadi Biryani Bengaluru, Chicken 65 Whitefield, Best Kebabs Bengaluru, South Indian Snacks Whitefield, Chinese Starters Bengaluru, Authentic Indian Food Karnataka, Jeera Samba Rice Biryani Whitefield, Restaurant near Hoodi"
+    />
+    <meta name="author" content="ChefD Restaurant" />
+
+    <meta
+      property="og:title"
+      content="ChefD | Authentic Biryani, Kebabs & South Indian Delights"
+    />
+    <meta
+      property="og:description"
+      content="Experience the royal flavors of Hyderabadi biryani, kebabs, Indo-Chinese dishes, and traditional South Indian snacks at ChefD, Whitefield, Bengaluru."
+    />
+    <meta property="og:type" content="restaurant" />
 
     <!-- Tailwindcss CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -32,6 +56,14 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
+    <!-- WhatsApp Icon -->
+    <a href="https://wa.me/+919482638911" class="whatsapp-icon" target="_blank">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+        alt="WhatsApp"
+      />
+    </a>
+
     <!-- Start Header Section -->
     <header class="bg-custom-black shadow-md">
       <div class="custom-container">
@@ -150,7 +182,10 @@
           >
             <div class="custom-container">
               <div class="flex flex-col md:flex-row items-center">
-                <div class="w-full md:w-1/2 lg:w-2/3 text-white" data-aos="fade-right">
+                <div
+                  class="w-full md:w-1/2 lg:w-2/3 text-white"
+                  data-aos="fade-right"
+                >
                   <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
                     Royal Flavors
                   </h2>
@@ -253,7 +288,7 @@
           <div class="w-full xl:w-1/2 mb-12 lg:mb-0">
             <div class="mb-12" data-aos="fade-right">
               <!-- Section Title -->
-              <div class="mb-8" >
+              <div class="mb-8">
                 <span class="text-lg font-medium text-primary-color"
                   >Discover Your Taste</span
                 >
@@ -284,48 +319,6 @@
                 they create joy, bonds, and memories.
               </p>
             </div>
-            <!-- <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div class="flex items-start mb-5">
-                <div class="text-3xl text-green-600 mr-4">
-                  <span class="flaticon-restaurant">🍴</span>
-                </div>
-                <div>
-                  <p class="text-gray-600">
-                    Ut enim ad minim veniam, quis nostrud exer.
-                  </p>
-                </div>
-              </div>
-              <div class="flex items-start mb-5">
-                <div class="text-3xl text-green-600 mr-4">
-                  <span class="flaticon-tools-and-utensils-1">🔪</span>
-                </div>
-                <div>
-                  <p class="text-gray-600">
-                    Ut enim ad minim veniam, quis nostrud exer.
-                  </p>
-                </div>
-              </div>
-              <div class="flex items-start mb-5">
-                <div class="text-3xl text-green-600 mr-4">
-                  <span class="flaticon-hat">👨‍🍳</span>
-                </div>
-                <div>
-                  <p class="text-gray-600">
-                    Ut enim ad minim veniam, quis nostrud exer.
-                  </p>
-                </div>
-              </div>
-              <div class="flex items-start mb-5">
-                <div class="text-3xl text-green-600 mr-4">
-                  <span class="flaticon-restaurant">🍽️</span>
-                </div>
-                <div>
-                  <p class="text-gray-600">
-                    Ut enim ad minim veniam, quis nostrud exer.
-                  </p>
-                </div>
-              </div>
-            </div> -->
           </div>
           <div class="w-full lg:w-1/2" data-aos="fade-left">
             <!-- about-img -->
@@ -353,15 +346,18 @@
         <ul
           class="flex flex-wrap justify-center gap-2 md:gap-4 mb-12 list-none p-0"
         >
-          <li class="menu-list active-list">All</li>
-          <li class="menu-list" data-filter=".burger">Biryani Specials</li>
-          <li class="menu-list" data-filter=".pizza">Non-Veg Starters</li>
-          <li class="menu-list" data-filter=".pasta">Veg Starters</li>
-          <li class="menu-list" data-filter=".fries">Rice & Noodles</li>
+          <li class="menu-list active-list" data-filter="all">All</li>
+          <li class="menu-list" data-filter=".biriyanis">Biryani Specials</li>
+          <li class="menu-list" data-filter=".Non-Veg-Starters">
+            Non-Veg Starters
+          </li>
+          <li class="menu-list" data-filter=".Veg-Starters">Veg Starters</li>
+          <li class="menu-list" data-filter=".Rice-Noodles">Rice & Noodles</li>
 
-          <li class="menu-list" data-filter=".fries">Quick Bites</li>
+          <li class="menu-list" data-filter=".Quick-Bites">Quick Bites</li>
 
-          <li class="menu-list" data-filter=".fries">South Indian Snacks</li>
+          <li class="menu-list" data-filter=".Snacks">South Indian Snacks</li>
+          <li class="menu-list" data-filter=".Drinks">Hot & Cold Drinks</li>
         </ul>
 
         <!-- Food Grid -->
@@ -369,7 +365,7 @@
           class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 w-full lg:w-[90%] mx-auto"
         >
           <div
-            class="relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-al"
+            class="menu-item biriyanis relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-al"
           >
             <div
               class="bg-gray-100 flex justify-center items-center h-56 rounded-br-[45px]"
@@ -395,7 +391,7 @@
           </div>
 
           <div
-            class="relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-al"
+            class="menu-item biriyanis relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-al"
           >
             <div
               class="bg-gray-100 flex justify-center items-center h-56 rounded-br-[45px]"
@@ -420,14 +416,14 @@
           </div>
 
           <div
-            class="relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-al"
+            class="menu-item biriyanis relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-al"
           >
             <div
               class="bg-gray-100 flex justify-center items-center h-56 rounded-br-[45px]"
             >
               <img
-                src="assets/images/menu/chicken-dum-hyd.jpg"
-                alt="Mutton Dum Biriyani (Hydarabadi)"
+                src="assets/images/menu/Mutton Dum Biryani (ChefD Special – Jeera Samba Rice).jpg"
+                alt="Mutton Dum Biryani (ChefD Special – Jeera Samba Rice)"
                 class="w-full h-full"
               />
             </div>
@@ -445,14 +441,14 @@
             </div>
           </div>
 
-          <!-- <div
-            class="relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-al"
+          <div
+            class="menu-item biriyanis relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-al"
           >
             <div
               class="bg-gray-100 flex justify-center items-center h-56 rounded-br-[45px]"
             >
               <img
-                src="assets/images/menu/chicken-dum-hyd.jpg"
+                src="assets/images/menu/Chicken Dum Biryani (ChefD Special – Jeera Samba Rice).jpeg"
                 alt="Mutton Dum Biriyani (Hydarabadi)"
                 class="w-full h-full"
               />
@@ -468,18 +464,18 @@
                 experience that captures true Hyderabadi tradition.
               </p>
             </div>
-          </div> -->
+          </div>
 
           <!-- Non-Veg Starters -->
           <div
-            class="relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-al"
+            class="menu-item Non-Veg-Starters relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-al"
           >
             <div
               class="bg-gray-100 flex justify-center items-center h-56 rounded-br-[45px]"
             >
               <img
-                src="assets/images/menu/chicken-dum-hyd.jpg"
-                alt="Mutton Dum Biriyani (Hydarabadi)"
+                src="assets/images/menu/Chicken Kebab (Chicken 65).jpg"
+                alt="Chicken Kebab (Chicken 65)"
                 class="w-full h-full"
               />
             </div>
@@ -497,14 +493,14 @@
           </div>
 
           <div
-            class="relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-al"
+            class="menu-item Non-Veg-Starters relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-al"
           >
             <div
               class="bg-gray-100 flex justify-center items-center h-56 rounded-br-[45px]"
             >
               <img
-                src="assets/images/menu/chicken-dum-hyd.jpg"
-                alt="Mutton Dum Biriyani (Hydarabadi)"
+                src="assets/images/menu/chilli-chicken.jpg"
+                alt=" Chicken Chilli (Chinese Style)"
                 class="w-full h-full"
               />
             </div>
@@ -521,14 +517,14 @@
           </div>
 
           <div
-            class="relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-al"
+            class="menu-item Veg-Starters relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-al"
           >
             <div
               class="bg-gray-100 flex justify-center items-center h-56 rounded-br-[45px]"
             >
               <img
-                src="assets/images/menu/chicken-dum-hyd.jpg"
-                alt="Mutton Dum Biriyani (Hydarabadi)"
+                src="assets/images/menu/Veg Manchurian.jpg"
+                alt="Veg Manchurian"
                 class="w-full h-full"
               />
             </div>
@@ -541,11 +537,474 @@
               </p>
             </div>
           </div>
+
+          <!-- Mushroom Manchurian -->
+          <div
+            class="menu-item Veg-Starters relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-all"
+          >
+            <div
+              class="bg-gray-100 flex justify-center items-center h-56 rounded-br-[45px]"
+            >
+              <img
+                src="assets/images/menu/Mushroom Manchurian.jpg"
+                alt="Mushroom Manchurian"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6 text-white">
+              <h5 class="text-lg font-semibold mb-2">Mushroom Manchurian</h5>
+              <p class="text-gray-300 mb-4 text-sm">
+                Crispy fried mushrooms tossed in a spicy Indo-Chinese sauce with
+                onions, garlic, and spring onions. A flavorful treat for
+                mushroom lovers.
+              </p>
+            </div>
+          </div>
+
+          <!-- Paneer Manchurian -->
+          <div
+            class="menu-item Veg-Starters relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-all"
+          >
+            <div
+              class="bg-gray-100 flex justify-center items-center h-56 rounded-br-[45px]"
+            >
+              <img
+                src="assets/images/menu/Paneer Manchurian.jpg"
+                alt="Paneer Manchurian"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6 text-white">
+              <h5 class="text-lg font-semibold mb-2">Paneer Manchurian</h5>
+              <p class="text-gray-300 mb-4 text-sm">
+                Soft paneer cubes cooked in a rich Manchurian sauce with garlic
+                and bell peppers. A delicious Indo-Chinese favorite.
+              </p>
+            </div>
+          </div>
+
+          <!-- Shanghai Potato -->
+          <div
+            class="menu-item Veg-Starters relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-all"
+          >
+            <div
+              class="bg-gray-100 flex justify-center items-center h-56 rounded-br-[45px]"
+            >
+              <img
+                src="assets/images/menu/Shanghai Potato.jpg"
+                alt="Shanghai Potato"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6 text-white">
+              <h5 class="text-lg font-semibold mb-2">Shanghai Potato</h5>
+              <p class="text-gray-300 mb-4 text-sm">
+                Crispy potato fingers tossed in spicy Shanghai-style sauce with
+                garlic and chili. A perfect crunchy starter.
+              </p>
+            </div>
+          </div>
+
+          <!-- Chicken Noodles -->
+          <div
+            class="menu-item Rice-Noodles relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-all"
+          >
+            <div
+              class="bg-gray-100 flex justify-center items-center h-56 rounded-br-[45px]"
+            >
+              <img
+                src="assets/images/menu/Chicken Noodles.jpg"
+                alt="Chicken Noodles"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6 text-white">
+              <h5 class="text-lg font-semibold mb-2">Chicken Noodles</h5>
+              <p class="text-gray-300 mb-4 text-sm">
+                Stir-fried noodles with juicy chicken, vegetables, and soy sauce
+                for an authentic Indo-Chinese flavor.
+              </p>
+            </div>
+          </div>
+
+          <!-- Prawn Noodles -->
+          <div
+            class="menu-item Rice-Noodles relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-all"
+          >
+            <div
+              class="bg-gray-100 flex justify-center items-center h-56 rounded-br-[45px]"
+            >
+              <img
+                src="assets/images/menu/Prawn Noodles.jpg"
+                alt="Prawn Noodles"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6 text-white">
+              <h5 class="text-lg font-semibold mb-2">Prawn Noodles</h5>
+              <p class="text-gray-300 mb-4 text-sm">
+                Flavorful noodles stir-fried with fresh prawns, vegetables, and
+                savory sauces for a delightful seafood twist.
+              </p>
+            </div>
+          </div>
+
+          <!-- Veg Noodles -->
+          <div
+            class="menu-item Rice-Noodles relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-all"
+          >
+            <div
+              class="bg-gray-100 flex justify-center items-center h-56 rounded-br-[45px]"
+            >
+              <img
+                src="assets/images/menu/Veg Noodles.jpg"
+                alt="Veg Noodles"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6 text-white">
+              <h5 class="text-lg font-semibold mb-2">Veg Noodles</h5>
+              <p class="text-gray-300 mb-4 text-sm">
+                A classic mix of noodles tossed with seasonal veggies, soy
+                sauce, and Asian spices for a wholesome meal.
+              </p>
+            </div>
+          </div>
+
+          <!-- Chicken Fried Rice -->
+          <div
+            class="menu-item Rice-Noodles relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-all"
+          >
+            <div
+              class="bg-gray-100 flex justify-center items-center h-56 rounded-br-[45px]"
+            >
+              <img
+                src="assets/images/menu/Chicken Fried Rice.jpg"
+                alt="Chicken Fried Rice"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6 text-white">
+              <h5 class="text-lg font-semibold mb-2">Chicken Fried Rice</h5>
+              <p class="text-gray-300 mb-4 text-sm">
+                Wok-tossed basmati rice with juicy chicken, scrambled eggs, and
+                soy sauce. A must-try Indo-Chinese classic.
+              </p>
+            </div>
+          </div>
+
+          <!-- Prawn Fried Rice -->
+          <div
+            class="menu-item Rice-Noodles relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-all"
+          >
+            <div
+              class="bg-gray-100 flex justify-center items-center h-56 rounded-br-[45px]"
+            >
+              <img
+                src="assets/images/menu/Prawn Fried Rice.jpg"
+                alt="Prawn Fried Rice"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6 text-white">
+              <h5 class="text-lg font-semibold mb-2">Prawn Fried Rice</h5>
+              <p class="text-gray-300 mb-4 text-sm">
+                Fragrant fried rice with succulent prawns, spring onions, and a
+                touch of garlic soy sauce. Perfect for seafood lovers.
+              </p>
+            </div>
+          </div>
+
+          <!-- Veg Fried Rice -->
+          <div
+            class="menu-item Rice-Noodles relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-all"
+          >
+            <div
+              class="bg-gray-100 flex justify-center items-center h-56 rounded-br-[45px]"
+            >
+              <img
+                src="assets/images/menu/Veg Fried Rice.jpg"
+                alt="Veg Fried Rice"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6 text-white">
+              <h5 class="text-lg font-semibold mb-2">Veg Fried Rice</h5>
+              <p class="text-gray-300 mb-4 text-sm">
+                Basmati rice tossed with fresh vegetables, garlic, and soy
+                sauce. A healthy and tasty option.
+              </p>
+            </div>
+          </div>
+
+          <!-- French Fries -->
+          <div
+            class="menu-item Quick-Bites mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-all"
+          >
+            <div
+              class="bg-gray-100 flex justify-center items-center h-56 rounded-br-[45px]"
+            >
+              <img
+                src="assets/images/menu/French Fries.jpg"
+                alt="French Fries"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6 text-white">
+              <h5 class="text-lg font-semibold mb-2">French Fries</h5>
+              <p class="text-gray-300 mb-4 text-sm">
+                Crispy golden potato fries, perfectly seasoned. A classic snack
+                loved by all ages.
+              </p>
+            </div>
+          </div>
+
+          <!-- Cheese Fries -->
+          <div
+            class="menu-item Quick-Bites relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-all"
+          >
+            <div
+              class="bg-gray-100 flex justify-center items-center h-56 rounded-br-[45px]"
+            >
+              <img
+                src="assets/images/menu/Cheese Fries.jpg"
+                alt="Cheese Fries"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6 text-white">
+              <h5 class="text-lg font-semibold mb-2">Cheese Fries</h5>
+              <p class="text-gray-300 mb-4 text-sm">
+                Classic crispy fries topped with melted cheese for an indulgent
+                snack.
+              </p>
+            </div>
+          </div>
+
+          <!-- Chilli Bajji -->
+          <div
+            class="menu-item Snacks relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-all"
+          >
+            <div
+              class="bg-gray-100 flex justify-center items-center h-56 rounded-br-[45px]"
+            >
+              <img
+                src="assets/images/menu/Chilli Bajji.jpg"
+                alt="Chilli Bajji"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6 text-white">
+              <h5 class="text-lg font-semibold mb-2">Chilli Bajji</h5>
+              <p class="text-gray-300 mb-4 text-sm">
+                Spicy green chilies dipped in seasoned batter and deep-fried
+                until crispy. A favorite South Indian street snack.
+              </p>
+            </div>
+          </div>
+
+          <!-- Aloo Bonda -->
+          <div
+            class="menu-item Snacks relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-all"
+          >
+            <div
+              class="bg-gray-100 flex justify-center items-center h-56 rounded-br-[45px]"
+            >
+              <img
+                src="assets/images/menu/Aloo Bonda.jpg"
+                alt="Aloo Bonda"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6 text-white">
+              <h5 class="text-lg font-semibold mb-2">Aloo Bonda</h5>
+              <p class="text-gray-300 mb-4 text-sm">
+                Deep-fried potato dumplings coated in gram flour batter. Crispy
+                outside, soft inside, and full of flavor.
+              </p>
+            </div>
+          </div>
+
+          <!-- Vada -->
+          <div
+            class="menu-item Snacks relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-all"
+          >
+            <div
+              class="bg-gray-100 flex justify-center items-center h-56 rounded-br-[45px]"
+            >
+              <img
+                src="assets/images/menu/Vada.jpeg"
+                alt="Vada"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6 text-white">
+              <h5 class="text-lg font-semibold mb-2">Vada</h5>
+              <p class="text-gray-300 mb-4 text-sm">
+                A traditional South Indian savory doughnut made with lentils,
+                herbs, and spices. Crispy and fluffy.
+              </p>
+            </div>
+          </div>
+
+          <!-- Samosa -->
+          <div
+            class="menu-item Snacks relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-all"
+          >
+            <div
+              class="bg-gray-100 flex justify-center items-center h-56 rounded-br-[45px]"
+            >
+              <img
+                src="assets/images/menu/Samosa.jpeg"
+                alt="Samosa"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6 text-white">
+              <h5 class="text-lg font-semibold mb-2">Samosa</h5>
+              <p class="text-gray-300 mb-4 text-sm">
+                Crispy golden pastry filled with spiced potatoes and peas. A
+                beloved Indian snack.
+              </p>
+            </div>
+          </div>
+
+          <!-- Pakkuvada -->
+          <div
+            class="menu-item Snacks relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-all"
+          >
+            <div
+              class="bg-gray-100 flex justify-center items-center h-56 rounded-br-[45px]"
+            >
+              <img
+                src="assets/images/menu/Pakkuvada.jpeg"
+                alt="Pakkuvada"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6 text-white">
+              <h5 class="text-lg font-semibold mb-2">Pakkuvada</h5>
+              <p class="text-gray-300 mb-4 text-sm">
+                Crispy South Indian fritters made from gram flour and onions,
+                deep-fried to perfection. A crunchy tea-time snack.
+              </p>
+            </div>
+          </div>
+
+          <!-- Parippu Vada -->
+          <div
+            class="menu-item Snacks relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-all"
+          >
+            <div
+              class="bg-gray-100 flex justify-center items-center h-56 rounded-br-[45px]"
+            >
+              <img
+                src="assets/images/menu/Parippuvada_.jpeg"
+                alt="Parippu Vada"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6 text-white">
+              <h5 class="text-lg font-semibold mb-2">Parippu Vada</h5>
+              <p class="text-gray-300 mb-4 text-sm">
+                A traditional Kerala snack made with spiced lentils, fried until
+                golden and crispy. Perfect with hot tea.
+              </p>
+            </div>
+          </div>
+
+          <!-- Falafel -->
+          <div
+            class="menu-item Snacks relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-all"
+          >
+            <div
+              class="bg-gray-100 flex justify-center items-center h-56 rounded-br-[45px]"
+            >
+              <img
+                src="assets/images/menu/Falafel.jpeg"
+                alt="Falafel"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6 text-white">
+              <h5 class="text-lg font-semibold mb-2">Falafel</h5>
+              <p class="text-gray-300 mb-4 text-sm">
+                Crispy Middle Eastern chickpea fritters, seasoned with herbs and
+                spices. A healthy and tasty vegetarian snack.
+              </p>
+            </div>
+          </div>
+
+          <!-- Tea -->
+          <div
+            class="menu-item Drinks relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-all"
+          >
+            <div
+              class="bg-gray-100 flex justify-center items-center h-56 rounded-br-[45px]"
+            >
+              <img
+                src="assets/images/menu/Tea.jpg"
+                alt="Tea"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6 text-white">
+              <h5 class="text-lg font-semibold mb-2">Tea</h5>
+              <p class="text-gray-300 mb-4 text-sm">
+                Refreshing hot tea brewed to perfection. A comforting choice
+                anytime.
+              </p>
+            </div>
+          </div>
+
+          <!-- Zaffron Milk Tea -->
+          <div
+            class="menu-item Drinks relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-all"
+          >
+            <div
+              class="bg-gray-100 flex justify-center items-center h-56 rounded-br-[45px]"
+            >
+              <img
+                src="assets/images/menu/Zaffron Milk Tea.jpg"
+                alt="Zaffron Milk Tea"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6 text-white">
+              <h5 class="text-lg font-semibold mb-2">Zaffron Milk Tea</h5>
+              <p class="text-gray-300 mb-4 text-sm">
+                Rich saffron-infused milk tea with a delicate aroma and soothing
+                taste.
+              </p>
+            </div>
+          </div>
+
+          <!-- Fresh Juices -->
+          <div
+            class="menu-item Drinks relative mt-6 bg-white rounded-xl overflow-hidden bg-custom-black transform hover:scale-105 duration-300 transition-all"
+          >
+            <div
+              class="bg-gray-100 flex justify-center items-center h-56 rounded-br-[45px]"
+            >
+              <img
+                src="assets/images/menu/Fresh Juices.jpg"
+                alt="Fresh Juices"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6 text-white">
+              <h5 class="text-lg font-semibold mb-2">Fresh Juices</h5>
+              <p class="text-gray-300 mb-4 text-sm">
+                A refreshing selection of freshly squeezed seasonal fruit juices
+                to energize your day.
+              </p>
+            </div>
+          </div>
         </div>
 
         <!-- View More Button -->
         <div class="flex justify-center mt-12">
-          <a href="#" class="custom-btn"> View More </a>
+          <a href="menu.html" class="custom-btn"> View More </a>
         </div>
       </div>
     </section>
@@ -912,6 +1371,33 @@
         duration: 600,
         easing: "ease-out",
         offset: 80,
+      });
+    </script>
+
+    <!-- Filtering Script -->
+    <script>
+      const menuLists = document.querySelectorAll(".menu-list");
+      const menuItems = document.querySelectorAll(".menu-item");
+
+      menuLists.forEach((list) => {
+        list.addEventListener("click", () => {
+          // remove active highlight
+          menuLists.forEach((l) => l.classList.remove("active-list"));
+          list.classList.add("active-list");
+
+          const filter = list.getAttribute("data-filter");
+
+          menuItems.forEach((item) => {
+            if (
+              filter === "all" ||
+              item.classList.contains(filter.substring(1))
+            ) {
+              item.style.display = "block";
+            } else {
+              item.style.display = "none";
+            }
+          });
+        });
       });
     </script>
   </body>

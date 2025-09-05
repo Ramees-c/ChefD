@@ -3,7 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ChefD</title>
+    <title>ChefD | Authentic Biryani, Kebabs & South Indian Delights</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+
+    <!-- ✅ SEO Meta -->
+    <meta
+      name="description"
+      content="ChefD serves authentic Hyderabadi biryani, kebabs, Indo-Chinese dishes, and South Indian snacks in Whitefield, Bengaluru. Visit us at RR Sai Complex, Opp: Mahaveer Dazzle, Basavanna Nagar Main Road, Mahadevapura, Hoodi."
+    />
+    <meta
+      name="keywords"
+      content="ChefD, Hyderabadi Biryani Bengaluru, Chicken 65 Whitefield, Best Kebabs Bengaluru, South Indian Snacks Whitefield, Chinese Starters Bengaluru, Authentic Indian Food Karnataka, Jeera Samba Rice Biryani Whitefield, Restaurant near Hoodi"
+    />
+    <meta name="author" content="ChefD Restaurant" />
+
+    <meta
+      property="og:title"
+      content="ChefD | Authentic Biryani, Kebabs & South Indian Delights"
+    />
+    <meta
+      property="og:description"
+      content="Experience the royal flavors of Hyderabadi biryani, kebabs, Indo-Chinese dishes, and traditional South Indian snacks at ChefD, Whitefield, Bengaluru."
+    />
+    <meta property="og:type" content="restaurant" />
 
     <!-- Tailwindcss CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -23,103 +47,112 @@
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
-  <!-- Start Header Section -->
-  <header class="bg-custom-black shadow-md">
-    <div class="custom-container">
-      <nav class="flex items-center justify-between py-4">
-        <!-- Logo -->
-        <a href="index.html"
-          ><img
-            src="assets/images/logo/brand-logo-1.png"
-            alt=""
-            class="w-[120px]"
-        /></a>
 
-        <!-- Mobile menu button -->
-        <div class="lg:hidden">
-          <button
-            class="navbar-toggler focus:outline-none"
-            type="button"
-            aria-label="Toggle navigation"
-          >
-            <span class="block w-6 h-0.5 bg-primary mb-1"></span>
-            <span class="block w-6 h-0.5 bg-primary mb-1"></span>
-            <span class="block w-6 h-0.5 bg-primary"></span>
-          </button>
-        </div>
+  <body>
+    <!-- WhatsApp Icon -->
+    <a href="https://wa.me/+919482638911" class="whatsapp-icon" target="_blank">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+        alt="WhatsApp"
+      />
+    </a>
 
-        <!-- Navigation Links -->
-        <div class="hidden lg:flex lg:items-center lg:justify-between">
-          <ul class="flex space-x-20">
+    <!-- Start Header Section -->
+    <header class="bg-custom-black shadow-md">
+      <div class="custom-container">
+        <nav class="flex items-center justify-between py-4">
+          <!-- Logo -->
+          <a href="index.html"
+            ><img
+              src="assets/images/logo/brand-logo-1.png"
+              alt=""
+              class="w-[120px]"
+          /></a>
+
+          <!-- Mobile menu button -->
+          <div class="lg:hidden">
+            <button
+              class="navbar-toggler focus:outline-none"
+              type="button"
+              aria-label="Toggle navigation"
+            >
+              <span class="block w-6 h-0.5 bg-primary mb-1"></span>
+              <span class="block w-6 h-0.5 bg-primary mb-1"></span>
+              <span class="block w-6 h-0.5 bg-primary"></span>
+            </button>
+          </div>
+
+          <!-- Navigation Links -->
+          <div class="hidden lg:flex lg:items-center lg:justify-between">
+            <ul class="flex space-x-20">
+              <li>
+                <a
+                  href="index.html"
+                  class="text-white font-medium hover:text-[#e3000e] text-xl transition duration-300 ease-in-out transform"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="text-white font-medium hover:text-[#e3000e] text-xl transition duration-300 ease-in-out transform"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="menu.html"
+                  class="text-white font-medium hover:text-[#e3000e] text-xl transition duration-300 ease-in-out transform"
+                  >Menu</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="active text-white font-medium hover:text-[#e3000e] text-xl transition duration-300 ease-in-out transform"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Mobile menu (hidden by default) -->
+        <div class="lg:hidden hidden" id="mobile-menu">
+          <ul class="py-4 space-y-2">
             <li>
               <a
                 href="index.html"
-                class="text-white font-medium hover:text-[#e3000e] text-xl transition duration-300 ease-in-out transform"
+                class="block px-4 py-2 text-white font-medium hover:text-[#e3000e] text-lg"
                 >Home</a
               >
             </li>
             <li>
               <a
                 href="about.html"
-                class="text-white font-medium hover:text-[#e3000e] text-xl transition duration-300 ease-in-out transform"
+                class="block px-4 py-2 text-white font-medium hover:text-[#e3000e] text-lg"
                 >About</a
               >
             </li>
             <li>
               <a
                 href="menu.html"
-                class="text-white font-medium hover:text-[#e3000e] text-xl transition duration-300 ease-in-out transform"
+                class="block px-4 py-2 text-white font-medium hover:text-[#e3000e] text-lg"
                 >Menu</a
               >
             </li>
             <li>
               <a
                 href="contact.html"
-                class="active text-white font-medium hover:text-[#e3000e] text-xl transition duration-300 ease-in-out transform"
+                class="block px-4 py-2 text-white font-medium hover:text-[#e3000e] text-lg"
                 >Contact</a
               >
             </li>
           </ul>
         </div>
-      </nav>
-
-      <!-- Mobile menu (hidden by default) -->
-      <div class="lg:hidden hidden" id="mobile-menu">
-        <ul class="py-4 space-y-2">
-          <li>
-            <a
-              href="index.html"
-              class="block px-4 py-2 text-white font-medium hover:text-[#e3000e] text-lg"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              href="about.html"
-              class="block px-4 py-2 text-white font-medium hover:text-[#e3000e] text-lg"
-              >About</a
-            >
-          </li>
-          <li>
-            <a
-              href="menu.html"
-              class="block px-4 py-2 text-white font-medium hover:text-[#e3000e] text-lg"
-              >Menu</a
-            >
-          </li>
-          <li>
-            <a
-              href="contact.html"
-              class="block px-4 py-2 text-white font-medium hover:text-[#e3000e] text-lg"
-              >Contact</a
-            >
-          </li>
-        </ul>
       </div>
-    </div>
-  </header>
-  <!-- End Header Section -->
-  <body>
+    </header>
+    <!-- End Header Section -->
     <section class="about-section">
       <div class="about-content" data-aos="fade-right">
         <h2>Contact US</h2>
