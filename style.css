@@ -144,6 +144,7 @@
   background: url("assets/images/footer-bg.jpg") no-repeat right center;
   background-size: cover;
   background-color: black; /* fallback */
+  overflow-x: hidden;
 }
 
 .about-content {
