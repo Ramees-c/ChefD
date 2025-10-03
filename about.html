@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
     <title>ChefD | Authentic Biriyani, Kebabs & South Indian Delights</title>
 
     <!-- Favicon -->
@@ -381,6 +384,14 @@
       duration: 600,
       easing: "ease-out",
       offset: 80,
+    });
+  </script>
+  <script>
+    const menuBtn = document.querySelector(".navbar-toggler");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
     });
   </script>
 </html>
