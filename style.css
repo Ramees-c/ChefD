@@ -517,3 +517,38 @@
     transform: scale(1);
   }
 }
+
+/* Custom Loading Bar Animation */
+@keyframes loading-bar {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1818;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e3000e;
+  border-radius: 10px;
+  border: 2px solid #1a1818;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b3000b;
+}
+
+/* Firefox Support */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #e3000e #1a1818;
+}

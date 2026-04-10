@@ -51,7 +51,23 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
-  <body>
+  <body class="overflow-x-hidden overflow-y-hidden" id="body-root">
+    <!-- Modern Loading Animation -->
+    <div id="loader-wrapper" class="fixed inset-0 z-[10000] flex flex-col items-center justify-center bg-[#1a1818] transition-opacity duration-700 ease-in-out">
+      <div class="relative flex items-center justify-center mb-6">
+        <!-- Rotating Ring -->
+        <div class="w-24 h-24 md:w-32 md:h-32 border-4 border-[#e3000e]/20 border-t-[#e3000e] rounded-full animate-spin"></div>
+        <!-- Inner Logo -->
+        <img src="assets/images/logo/brand-logo-1.png" alt="ChefD Logo" class="absolute w-14 md:w-20 animate-pulse" />
+      </div>
+      <div class="flex flex-col items-center">
+        <h2 class="text-white text-xl md:text-2xl font-bold tracking-[0.3em] uppercase mb-4">ChefD</h2>
+        <div class="w-48 h-1 bg-white/10 rounded-full overflow-hidden">
+          <div class="h-full bg-[#e3000e] w-1/2 animate-[loading-bar_1.5s_infinite_ease-in-out]"></div>
+        </div>
+      </div>
+    </div>
+
     <!-- WhatsApp Icon -->
     <a href="https://wa.me/+919482638911" class="whatsapp-icon" target="_blank">
       <img
@@ -478,6 +494,37 @@
       menuBtn.addEventListener("click", () => {
         mobileMenu.classList.toggle("hidden");
       });
+    </script>
+
+    <!-- Loader Script -->
+    <script>
+      (function () {
+        const loader = document.getElementById("loader-wrapper");
+        const body = document.getElementById("body-root");
+        let loaderHidden = false;
+
+        function hideLoader() {
+          if (!loader || loaderHidden) return;
+          loaderHidden = true;
+
+          loader.classList.add("opacity-0", "pointer-events-none");
+          body?.classList.remove("overflow-y-hidden");
+
+          setTimeout(() => {
+            loader.style.display = "none";
+          }, 700);
+        }
+
+        window.addEventListener("load", hideLoader);
+        window.addEventListener("DOMContentLoaded", () => {
+          if (document.readyState === "interactive" || document.readyState === "complete") {
+            setTimeout(hideLoader, 900);
+          }
+        });
+
+        // Fallback in case the load event never fires due to blocked or slow resources.
+        setTimeout(hideLoader, 3500);
+      })();
     </script>
   </body>
 </html>
